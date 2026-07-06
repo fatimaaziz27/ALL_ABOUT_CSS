@@ -2,6 +2,7 @@ There are three ways of inserting a style sheet:
 External CSS - link to an external .css file
 Internal CSS - use the <style> element in the head section
 Inline CSS - use the style attribute on HTML elements
+
 External CSS
 With an external style sheet, you can change the look of an entire website by changing just one file!
 Example
@@ -31,21 +32,9 @@ h1 {
   margin-left: 20px;
 }
 
-
-
-
-
-
-
-How To Add Internal CSS
 Internal CSS
-An internal style sheet may be used if one single HTML page has a unique style.
-
 The internal style is defined inside the <style> element, inside the head section.
-
 Example
-Internal styles are defined within the <style> element, inside the <head> section of an HTML page:
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,22 +57,8 @@ h1 {
 </body>
 </html>
 
-
-
-
-
-
-
-
-How To Add Inline CSS
 Inline CSS
-An inline style may be used to apply a unique style for a single element.
-
-To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
-
 Example
-Inline styles are defined within the "style" attribute of the relevant element:
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -93,18 +68,7 @@ Inline styles are defined within the "style" attribute of the relevant element:
 
 </body>
 </html>
-Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
 
-
-
-
-
-
-
-
-
-
-Multiple Style Sheets & Cascading Order
 Multiple Style Sheets
 If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
 
