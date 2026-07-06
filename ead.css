@@ -3,6 +3,7 @@ External CSS - link to an external .css file
 Internal CSS - use the <style> element in the head section
 Inline CSS - use the style attribute on HTML elements
 
+
 External CSS
 With an external style sheet, you can change the look of an entire website by changing just one file!
 Example
@@ -32,6 +33,7 @@ h1 {
   margin-left: 20px;
 }
 
+
 Internal CSS
 The internal style is defined inside the <style> element, inside the head section.
 Example
@@ -57,6 +59,7 @@ h1 {
 </body>
 </html>
 
+
 Inline CSS
 Example
 <!DOCTYPE html>
@@ -68,6 +71,7 @@ Example
 
 </body>
 </html>
+
 
 Multiple Style Sheets
 If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
