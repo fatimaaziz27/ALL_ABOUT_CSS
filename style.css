@@ -1,4 +1,4 @@
-CSS Selectors
+/* CSS Selectors
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 five categories:
 Simple selectors (select elements based on name, id, class)
@@ -6,41 +6,41 @@ Combinator selectors (select elements based on a specific relationship between t
 Pseudo-class selectors (select elements based on a certain state)
 Pseudo-elements selectors (select and style a part of an element)
 Attribute selectors (select elements based on an attribute or attribute value)
-This page will explain the most basic CSS selectors.
+This page will explain the most basic CSS selectors. */
 
-The CSS element Selector
+/* The CSS element Selector
 Example
-for all <p> elements
+for all <p> elements */
 p {
   text-align: center;
   color: red;
 }
 
-The CSS id Selector
+/* The CSS id Selector
 Example
-The CSS rule below will be applied to the HTML element with id="para1": 
+The CSS rule below will be applied to the HTML element with id="para1":  */
 #para1 {
   text-align: center;
   color: red;
 }
 
-The CSS class Selector
+/* The CSS class Selector
 Example
-In this example all HTML elements with class="center" will be red and center-aligned: 
+In this example all HTML elements with class="center" will be red and center-aligned:  */
 .center {
   text-align: center;
   color: red;
 }
 
-You can also specify that only specific HTML elements should be affected by a class.
+/* You can also specify that only specific HTML elements should be affected by a class.
 Example
-In this example only <p> elements with class="center" will be red and center-aligned: 
+In this example only <p> elements with class="center" will be red and center-aligned:  */
 p.center {
   text-align: center;
   color: red;
 }
 
-HTML elements can also refer to more than one class.
+/* HTML elements can also refer to more than one class.
 Example
-In this example the <p> element will be styled according to class="center" and to class="large": 
+In this example the <p> element will be styled according to class="center" and to class="large":  */
 <p class="center large">This paragraph refers to two classes.</p>
