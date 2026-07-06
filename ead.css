@@ -1,13 +1,13 @@
-There are three ways of inserting a style sheet:
+/* There are three ways of inserting a style sheet:
 External CSS - link to an external .css file
 Internal CSS - use the <style> element in the head section
-Inline CSS - use the style attribute on HTML elements
+Inline CSS - use the style attribute on HTML elements */
 
 
-External CSS
+/* External CSS
 With an external style sheet, you can change the look of an entire website by changing just one file!
 Example
-External styles are defined within the <link> element, inside the <head> section of an HTML page:
+External styles are defined within the <link> element, inside the <head> section of an HTML page: */
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,8 @@ External styles are defined within the <link> element, inside the <head> section
 </body>
 </html>
 
-how the "mystyle.css" file looks:
+/* how the "mystyle.css" file looks: */
+
 "mystyle.css"
 body {
   background-color: lightblue;
@@ -34,9 +35,10 @@ h1 {
 }
 
 
-Internal CSS
-The internal style is defined inside the <style> element, inside the head section.
-Example
+/* Internal CSS */
+/* The internal style is defined inside the <style> element, inside the head section.
+Example */
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,9 +62,11 @@ h1 {
 </html>
 
 
-Inline CSS
-Example
+/* Inline CSS
+Example */
+
 <!DOCTYPE html>
+
 <html>
 <body>
 
@@ -73,20 +77,22 @@ Example
 </html>
 
 
-Multiple Style Sheets
+/* Multiple Style Sheets
 If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
-Assume that an external style sheet has the following style for the <h1> element:
+Assume that an external style sheet has the following style for the <h1> element: */
+
 h1 {
   color: navy;
 }
-Then, assume that an internal style sheet also has the following style for the <h1> element:
+
+/* Then, assume that an internal style sheet also has the following style for the <h1> element: */
 
 h1 {
   color: orange;   
 }
 
-Example
-If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange":
+/* Example
+If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange": */
 
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -97,8 +103,9 @@ h1 {
 </style>
 </head>
 
-Example
-However, if the internal style is defined before the link to the external style sheet, the <h1> elements will be "navy": 
+/* Example
+However, if the internal style is defined before the link to the external style sheet, the <h1> elements will be "navy":  */
+
 <head>
 <style>
 h1 {
@@ -109,7 +116,7 @@ h1 {
 </head>
 
 
-Cascading Order
-What style will be used when there is more than one style specified for an HTML element?
+/* Cascading Order */
+/* What style will be used when there is more than one style specified for an HTML element?
 All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
-So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults. */
