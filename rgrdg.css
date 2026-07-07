@@ -230,3 +230,83 @@ body {
   background-position: right top;
   background-attachment: scroll;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Background Shorthand
+CSS background - Shorthand property
+To shorten the code, it is possible to specify all the background properties in one single property. This is called a shorthand property.
+
+Instead of writing:
+
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+You can use the shorthand property background:
+
+Example
+Use the shorthand property to set all the background properties in one declaration:
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+The background property is a shorthand property for the following properties:
+
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-attachment
+background-origin
+background-clip
+If some of the property values are missing, they will be set to their initial (default) values.
+
+Exercise
+?
+What is the purpose of the CSS background shorthand property?
+
+
+To define only the background color of an element
+To set default scroll behavior for all elements
+To apply gradient effects to backgrounds
+To specify multiple background properties in a single declaration
+
+All CSS Background Properties
+Property	Description
+background	Sets all the background properties in one declaration
+background-attachment	Sets whether a background image is fixed or scrolls with the rest of the page
+background-clip	Specifies the painting area of the background
+background-color	Sets the background color of an element
+background-image	Sets the background image for an element
+background-origin	Specifies where the background image(s) is/are positioned
+background-position	Sets the starting position of a background image
+background-repeat	Sets how a background image will be repeated
+background-size	Specifies the size of the background image(s)
+
+
+
+
+
+
+
+
+
+
+
