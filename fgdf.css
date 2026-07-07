@@ -29,7 +29,7 @@ hsla(9, 100%, 64%, 0.5) */
 
 /* CSS RGB Colors
 RGB Value */
-Example
+/* Example */
 rgb(255, 0, 0)
 rgb(0, 0, 255)
 rgb(60, 179, 113)
@@ -37,9 +37,9 @@ rgb(238, 130, 238)
 rgb(255, 165, 0)
 rgb(106, 90, 205)
 
-Shades of gray are often defined using equal values for all the 3 light sources:
+/* Shades of gray are often defined using equal values for all the 3 light sources: */
 
-Example
+/* Example */
 rgb(60, 60, 60)
 rgb(90, 90, 90)
 rgb(120, 120, 120)
@@ -47,12 +47,12 @@ rgb(180, 180, 180)
 rgb(210, 210, 210)
 rgb(240, 240, 240)
 
-RGBA Value
+/* RGBA Value
 RGB color values with an alpha channel - which specifies the opacity for a color.
 rgba(red, green, blue, alpha)
-rgba(255, 99, 71, 0.5)
+rgba(255, 99, 71, 0.5) */
 
-Example
+/* Example */
 rgba(255, 99, 71, 0)
 rgba(255, 99, 71, 0.2)
 rgba(255, 99, 71, 0.4)
@@ -61,11 +61,11 @@ rgba(255, 99, 71, 0.8)
 rgba(255, 99, 71, 1)
 
 
-HEX Value
+/* HEX Value
 A hexadecimal color is specified with: #RRGGBB.
-#rrggbb
+#rrggbb */
 
-Example
+/* Example */
 #ff0000
 #0000ff
 #3cb371
@@ -73,9 +73,9 @@ Example
 #ffa500
 #6a5acd
 
-Shades of gray are often defined using equal values for all the 3 light sources:
+/* Shades of gray are often defined using equal values for all the 3 light sources: */
 
-Example
+/* Example */
 #3c3c3c
 #616161
 #787878
@@ -83,12 +83,13 @@ Example
 #f0f0f0
 #f9f9f9
 
-3 Digit HEX Value
+/* 3 Digit HEX Value
 The 3-digit hex code is a shorthand for some 6-digit hex codes.
 The 3-digit hex code has the following form:
-#rgb
+#rgb */
 
-Example
+/* Example */
+
 body {
   background-color: #fc9; /* same as #ffcc99 */
 }
