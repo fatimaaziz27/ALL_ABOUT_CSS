@@ -25,3 +25,98 @@ hsla(9, 100%, 64%, 0.5) */
 
 <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
 <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+
+
+
+
+
+CSS RGB Colors
+RGB Value
+An RGB color value represents RED, GREEN, and BLUE light sources.
+
+In CSS, a color can be specified as an RGB value, using this formula:
+
+rgb(red, green, blue)
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+
+Experiment by mixing the RGB values below:
+
+rgb(255, 99, 71)
+
+RED
+
+
+255
+GREEN
+
+
+99
+BLUE
+
+
+71
+Example
+rgb(255, 0, 0)
+rgb(0, 0, 255)
+rgb(60, 179, 113)
+rgb(238, 130, 238)
+rgb(255, 165, 0)
+rgb(106, 90, 205)
+
+Shades of gray are often defined using equal values for all the 3 light sources:
+
+Example
+rgb(60, 60, 60)
+rgb(90, 90, 90)
+rgb(120, 120, 120)
+rgb(180, 180, 180)
+rgb(210, 210, 210)
+rgb(240, 240, 240)
+
+
+REMOVE ADS
+
+RGBA Value
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+Experiment by mixing the RGBA values below:
+
+rgba(255, 99, 71, 0.5)
+
+RED
+
+
+255
+GREEN
+
+
+99
+BLUE
+
+
+71
+ALPHA
+
+
+0.5
+Example
+rgba(255, 99, 71, 0)
+rgba(255, 99, 71, 0.2)
+rgba(255, 99, 71, 0.4)
+rgba(255, 99, 71, 0.6)
+rgba(255, 99, 71, 0.8)
+rgba(255, 99, 71, 1)
