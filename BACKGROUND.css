@@ -97,6 +97,7 @@ body {
   background-position: right top;
   background-attachment: fixed;
 }
+
 Example
 Specify that the background image should scroll with the rest of the page:
 
@@ -106,20 +107,6 @@ body {
   background-position: right top;
   background-attachment: scroll;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 CSS Background Shorthand
