@@ -425,3 +425,36 @@ Some text
 
 
 
+CSS Rounded Borders
+CSS Rounded Borders
+The border-radius property is used to add rounded borders to an element:
+
+Normal border
+
+Round border
+
+Rounder border
+
+Roundest border
+
+Example
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+More Examples
+All the top border properties in one declaration
+This example demonstrates a shorthand property for setting all of the properties for the top border in one declaration.
+
+Set the style of the bottom border
+This example demonstrates how to set the style of the bottom border.
+
+Set the width of the left border
+This example demonstrates how to set the width of the left border.
+
+Set the color of the four borders
+This example demonstrates how to set the color of the four borders. It can have from one to four colors.
+
+Set the color of the right border
+This example demonstrates how to set the color of the right border.
+
