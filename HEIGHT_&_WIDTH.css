@@ -65,3 +65,51 @@ Note: Remember that the height and width properties do not include padding, bord
 
 
 
+CSS Min/Max Height and Width
+CSS Min/Max Height and Width
+The min-width and max-width properties are used to set the minimum and maximum width of an element.
+
+The min-height and max-height properties are used to set the minimum and maximum height of an element.
+
+CSS Using max-width
+The max-width property sets the maximum allowed width of an element. This prevents the width of an element to be larger than the max-width property value.
+
+The max-width property can have the following values:
+
+length - Defines the maximum width in px, cm, etc.
+% - Defines the maximum width in percent of the containing block
+none - This is default. Means that there is no maximum width
+One problem with the width property can occur when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page. So, using max-width will improve the browser's handling on small windows.
+
+CSS max-width Examples
+Drag the browser window to smaller than 600px wide, to see the difference between the two divs below!
+
+Using width:
+
+This element has a width of 600 pixels.
+Using max-width:
+
+This element has a max-width of 600 pixels.
+Example
+One <div> element with a max-width of 500 pixels, and one <div> element with a width of 500 pixels:
+
+.div1 {
+  max-width: 500px;
+  background-color: powderblue;
+}
+
+.div2 {
+  width: 500px;
+  background-color: powderblue;
+}
+
+Note: If you use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property value will be used!
+
+Example
+A <div> element with both a width and a max-width property:
+
+.div1 {
+  width: 100%;
+  max-width: 900px;
+  background-color: powderblue;
+}
