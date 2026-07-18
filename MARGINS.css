@@ -1,6 +1,6 @@
-CSS Margins
+/* CSS Margins
 Margins define the distance between an element's border and the surrounding elements.
-Example
+Example */
 p {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -8,54 +8,53 @@ p {
   margin-left: 80px;
 }
 
-Margin - Shorthand Property
+/* Margin - Shorthand Property
 margin: 25px 50px 75px 100px;
 top margin is 25px
 right margin is 50px
 bottom margin is 75px
 left margin is 100px
-Example
+Example */
 p {
   margin: 25px 50px 75px 100px;
 }
 
-If the margin property has three values:
+/* If the margin property has three values:
 margin: 25px 50px 75px;
 top margin is 25px
 right and left margins are 50px
 bottom margin is 75px
-Example
+Example */
 p {
   margin: 25px 50px 75px;
 }
 
-If the margin property has two values:
+/* If the margin property has two values:
 margin: 25px 50px;
 top and bottom margins are 25px
 right and left margins are 50px
-Example
+Example */
 p {
   margin: 25px 50px;
 }
 
-If the margin property has one value:
+/* If the margin property has one value:
 margin: 25px;
-Example
+Example */
 p {
   margin: 25px;
 }
 
-The auto Value
-Example
-Use margin: auto:
+/* The auto Value
+Example */
 div {
   width: 300px;
   margin: auto;
   border: 1px solid red;
 }
 
-The inherit Value
-Example
+/* The inherit Value
+Example */
 div {
   border: 1px solid red;
   margin-left: 100px;
@@ -65,8 +64,8 @@ p.ex1 {
   margin-left: inherit;
 }
 
-CSS Margin Collapse
-Example
+/* CSS Margin Collapse
+Example */
 h1 {
   margin-bottom: 50px;
 }
@@ -75,8 +74,8 @@ h2 {
   margin-top: 20px;
 }
 
-In the following example, each <p> element has a top margin of 30px and a bottom margin of 30px. So, the vertical margin between the <p> elements should have been 60px (30px + 30px). However, due to margin collapse, the actual margin ends up being 30px:
-Example
+/* In the following example, each <p> element has a top margin of 30px and a bottom margin of 30px. So, the vertical margin between the <p> elements should have been 60px (30px + 30px). However, due to margin collapse, the actual margin ends up being 30px:
+Example */
 p {
   margin-top: 30px;
   margin-bottom: 30px;
