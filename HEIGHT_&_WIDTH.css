@@ -24,10 +24,10 @@ div {
 
 
 
-CSS Min/Max Height and Width
+/* CSS Min/Max Height and Width
 CSS Using max-width
 Example
-One <div> element with a max-width of 500 pixels, and one <div> element with a width of 500 pixels:
+One <div> element with a max-width of 500 pixels, and one <div> element with a width of 500 pixels: */
 
 .div1 {
   max-width: 500px;
@@ -39,8 +39,8 @@ One <div> element with a max-width of 500 pixels, and one <div> element with a w
   background-color: powderblue;
 }
 
-Example
-A <div> element with both a width and a max-width property:
+/* Example
+A <div> element with both a width and a max-width property: */
 
 .div1 {
   width: 100%;
