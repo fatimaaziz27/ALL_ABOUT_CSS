@@ -1,20 +1,20 @@
-CSS Height and Width
+/* CSS Height and Width
 The height and width properties can have the following values:
 auto - This is default. The browser calculates the height and width
 length - Defines the height or width in px, cm, em, etc.
 % - Defines the height or width in percent of the containing block
 initial - Sets the height or width to its default value
-inherit - The height or width will be inherited from its parent value
+inherit - The height or width will be inherited from its parent value */
 
-CSS height and width Examples
-Example
+/* CSS height and width Examples
+Example */
 div {
   height: 200px;
   width: 50%;
   background-color: powderblue;
 }
 
-Example
+/* Example */
 div {
   height: 100px;
   width: 500px;
