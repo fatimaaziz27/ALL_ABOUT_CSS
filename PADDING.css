@@ -1,8 +1,8 @@
-CSS Padding
-The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+/* CSS Padding
+The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
 
-Padding - Individual Sides
-Example
+/* Padding - Individual Sides
+Example */
 div {
   padding-top: 50px;
   padding-right: 30px;
@@ -10,35 +10,34 @@ div {
   padding-left: 80px;
 }
 
-Padding - Shorthand Property
+/* Padding - Shorthand Property
 If the padding property has four values:
 padding: 25px 50px 75px 100px;
-Example
+Example */
 div {
   padding: 25px 50px 75px 100px;
 }
 
-If the padding property has three values:
-Example
+/* If the padding property has three values:
+Example */
 div {
   padding: 25px 50px 75px;
 }
 
-If the padding property has two values:
-Example
+/* If the padding property has two values:
+Example */
 div {
   padding: 25px 50px;
 }
 
-If the padding property has one value:
-Example
+/* If the padding property has one value:
+Example */
 div {
   padding: 25px;
 }
 
-More Examples
-Set the left-padding property
-
+/* More Examples
+Set the left-padding property */
 <style>
 p.p2 {
   padding-left: 2cm;
@@ -48,8 +47,7 @@ p.p3 {
 }
 </style>
 
-Set the right-padding property
-
+/* Set the right-padding property */
 <style>
 p.p2 {
   padding-right: 2cm;
@@ -60,8 +58,7 @@ p.p3 {
 }
 </style>
 
-Set the top-padding property
-
+/* Set the top-padding property */
 <style>
 p.p2 {
   padding-top: 2cm;
@@ -72,8 +69,7 @@ p.p3 {
 }
 </style>
 
-Set the bottom-padding property
-
+/* Set the bottom-padding property */
 <style>
 p.p2 {
   padding-bottom: 2cm;
@@ -83,25 +79,6 @@ p.p3 {
   padding-bottom: 50%;
 }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
