@@ -83,16 +83,16 @@ p.p3 {
 
 
 
-CSS Padding and box-sizing
+/* CSS Padding and box-sizing
 Padding and Element Width
-Example
+Example */
 div {
   width: 300px;
   padding: 25px;
 }
 
-Padding and box-sizing
-Example
+/* Padding and box-sizing
+Example */
 div {
   width: 300px;
   padding: 25px;
