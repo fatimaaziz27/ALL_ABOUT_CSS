@@ -440,6 +440,108 @@ p.capitalize {
 
 
 
+CSS Text Spacing
+CSS Text Spacing
+CSS has several properties to control text spacing.
+
+In this chapter you will learn about the following properties:
+
+text-indent
+letter-spacing
+line-height
+word-spacing
+white-space
+CSS Text Indentation
+The CSS text-indent property is used to specify the indentation of the first line in a text-block.
+
+Tip: Negative values are allowed. The first line will be indented to the left if the value is negative.
+
+Example
+Indent the first line of text in a text-block:
+
+p {
+  text-indent: 50px;
+}
+CSS Letter Spacing
+The CSS letter-spacing property is used to specify the space between the characters in a text.
+
+Tip: Negative values are allowed.
+
+Example
+Increase and decrease the space between characters:
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+CSS Line Height
+The CSS line-height property is used to specify the space between lines.
+
+Note: Negative values are not allowed.
+
+Example
+Specify the space between lines:
+
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+REMOVE ADS
+
+CSS Word Spacing
+The CSS word-spacing property is used to specify the space between the words in a text.
+
+Tip: Negative values are allowed.
+
+Example
+Increase and decrease the space between words:
+
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+CSS White Space
+The CSS white-space property specifies how white-space inside an element is handled.
+
+This property can have one of the following values:
+
+normal
+nowrap
+pre
+pre-line
+pre-wrap
+Example
+How to disable text wrapping inside an element
+
+p {
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
