@@ -144,13 +144,6 @@ p.ex5 {
 
 
 CSS Outline Offset
-CSS Outline Offset
-The outline-offset property adds a space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
-
-The following example specifies an outline 15px outside the border edge:
-
-This paragraph has a black border and a red outline 15px outside the border edge.
-
 Example
 p {
   margin: 30px;
@@ -159,10 +152,8 @@ p {
   outline: 3px solid red;
   outline-offset: 15px;
 }
+
 The following example shows that the space between an element's border and its outline is transparent:
-
-This paragraph has an outline of 15px outside the border edge.
-
 Example
 p {
   margin: 30px;
@@ -172,13 +163,8 @@ p {
   outline: 3px solid red;
   outline-offset: 15px;
 }
-REMOVE ADS
 
 CSS Outline Offset with Negative Value
-The following example shows the use of an outline-offset with a negative value, now the outline will be placed inside the border edge:
-
-This paragraph has a black border and a red outline -5px inside the border edge.
-
 Example
 p {
   margin: 30px;
