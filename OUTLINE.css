@@ -1,14 +1,14 @@
-CSS Outline
+/* CSS Outline
 An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
 CSS has the following outline properties:
 outline-style - Specifies the style of the outline
 outline-color - Specifies the color of the outline
 outline-width - Specifies the width of the outline
-outline-offset - Adds space between the outline and the edge/border of an element
+outline-offset - Adds space between the outline and the edge/border of an element */
 
-CSS The outline-style Property
+/* CSS The outline-style Property */
 
-dotted - Defines a dotted outline
+/* dotted - Defines a dotted outline
 dashed - Defines a dashed outline
 solid - Defines a solid outline
 double - Defines a double outline
@@ -17,9 +17,9 @@ ridge - Defines a 3D ridged outline
 inset - Defines a 3D inset outline
 outset - Defines a 3D outset outline
 none - Defines no outline
-hidden - Defines a hidden outline
+hidden - Defines a hidden outline */
 
-The following example shows the different outline-style values:
+/* The following example shows the different outline-style values:
 Example
 p.dotted {outline-style: dotted;}
 p.dashed {outline-style: dashed;}
@@ -28,11 +28,11 @@ p.double {outline-style: double;}
 p.groove {outline-style: groove;}
 p.ridge {outline-style: ridge;}
 p.inset {outline-style: inset;}
-p.outset {outline-style: outset;}
+p.outset {outline-style: outset;} */
 
 
-CSS Outline Width
-Example
+/* CSS Outline Width
+Example */
 p {
   padding: 5px;
   outline-style: solid;
@@ -56,8 +56,8 @@ p.ex4 {
 }
 
 
-CSS Outline Color
-Example
+/* CSS Outline Color
+Example */
 p {
   border: 1px solid black;
   padding: 5px;
@@ -83,40 +83,40 @@ p.ex4 {
   outline-color: invert;
 }
 
-HEX Values
-Example
+/* HEX Values
+Example */
 p.ex1 {
   outline-style: solid;
   outline-color: #ff0000; /* red */
 }
 
-RGB Values
-Example
+/* RGB Values
+Example */
 p.ex1 {
   outline-style: solid;
   outline-color: rgb(255, 0, 0); /* red */
 }
 
-HSL Values
-Example
+/* HSL Values
+Example */
 p.ex1 {
   outline-style: solid;
   outline-color: hsl(0, 100%, 50%); /* red */
 }
 
 
-CSS Outline - Shorthand property
+/* CSS Outline - Shorthand property
 outline-width
 outline-style (required)
 outline-color
-Example
+Example */
 p.ex1 {outline: dashed;}
 p.ex2 {outline: dotted red;}
 p.ex3 {outline: 7px solid yellow;}
 p.ex4 {outline: thick ridge pink;}
 
-CSS Outline With Rounded Corners
-Example
+/* CSS Outline With Rounded Corners
+Example */
 p.ex1 {
   outline: dashed;
   border-radius: 8px;
@@ -143,8 +143,8 @@ p.ex5 {
 }
 
 
-CSS Outline Offset
-Example
+/* CSS Outline Offset
+Example */
 p {
   margin: 30px;
   padding: 5px;
@@ -153,8 +153,8 @@ p {
   outline-offset: 15px;
 }
 
-The following example shows that the space between an element's border and its outline is transparent:
-Example
+/* The following example shows that the space between an element's border and its outline is transparent:
+Example */
 p {
   margin: 30px;
   padding: 5px;
@@ -164,8 +164,8 @@ p {
   outline-offset: 15px;
 }
 
-CSS Outline Offset with Negative Value
-Example
+/* CSS Outline Offset with Negative Value
+Example */
 p {
   margin: 30px;
   padding: 5px;
