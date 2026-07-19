@@ -199,6 +199,87 @@ p {
 
 
 
+CSS Text Decoration
+CSS Text Decoration
+The CSS text-decoration property is used to control the appearance of decorative lines on text.
+
+It is a shorthand property for the following individual properties:
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+Add a Decoration Line to Text
+The CSS text-decoration-line property sets the type of decoration line added to the text.
+
+This property can have one or more of the following values:
+
+none - Default value. Displays no decoration line
+underline - The decoration line is displayed under the text
+overline - The decoration line is displayed over the text
+line-through - The decoration line is displayed through the text
+Tip: You can combine multiple values, like overline and underline to display lines both over and under a text.
+
+Example
+Set different types of decoration lines:
+
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}
+Note: It is not recommended to underline text that is not a link, as this often confuses the reader!
+
+REMOVE ADS
+
+Specify a Color for the Decoration Line
+The CSS text-decoration-color property is used to set the color of the decoration line.
+
+Example
+Add different colors to the decoration line:
+
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
