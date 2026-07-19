@@ -30,39 +30,8 @@ p.ridge {outline-style: ridge;}
 p.inset {outline-style: inset;}
 p.outset {outline-style: outset;}
 
-
-
-
-
-
-
-
-
-
-
-
 CSS Outline Width
-CSS Outline Width
-The outline-width property specifies the width of the outline, and can have one of the following values:
-
-thin (typically 1px)
-medium (typically 3px)
-thick (typically 5px)
-A specific size (in px, pt, cm, em, etc)
-CSS Outline Width Examples
-Here are some outlines with different widths:
-
-A thin outline.
-
-A medium outline.
-
-A thick outline.
-
-A 8px thick outline.
-
 Example
- Demonstration of different outline widths:
-
 p {
   padding: 5px;
   outline-style: solid;
