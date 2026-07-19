@@ -544,4 +544,79 @@ p {
 
 
 
+CSS Text Shadow
+CSS Text Shadow
+The text-shadow property adds shadow to text.
 
+In its simplest use, you only specify the horizontal and the vertical shadow.
+
+In addition, you can add a shadow color and blur effect.
+
+Text shadow effect!
+Example
+Horizontal and vertical shadow:
+
+h1 {
+  text-shadow: 2px 2px;
+}
+Next, add a color (red) to the shadow:
+
+Text shadow effect!
+Example
+Horizontal and vertical shadow, with color:
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+Then, add a blur effect (5px) to the shadow:
+
+Text shadow effect!
+Example
+Horizontal and vertical shadow, with color and blur effect:
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+More Text Shadow Examples
+Text shadow effect!
+Example
+Text-shadow on a white text:
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+Text shadow effect!
+Example
+Text-shadow with red neon glow:
+
+h1 {
+  text-shadow: 0 0 3px #ff0000;
+}
+REMOVE ADS
+
+Multiple Shadows
+The text-shadow property also accepts multiple shadows for an element. Define each shadow in a comma-separated list.
+
+The following example shows a red and blue neon glow shadow:
+
+Text shadow effect!
+Example
+Text-shadow with red and blue neon glow:
+
+h1 {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+The following example shows a white text with black, blue, and red neon glow:
+
+Text shadow effect!
+Example
+Text-shadow with black, blue and red neon glow:
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+}
+Tip: Go to our CSS Fonts chapter to learn about how to change fonts, text size and the style of a text.
+
+Tip: Go to our CSS Text Effects chapter to learn about different text effects.
