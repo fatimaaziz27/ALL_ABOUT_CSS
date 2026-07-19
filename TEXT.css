@@ -69,6 +69,138 @@ div {
 
 
 
+CSS Text Alignment
+CSS Text Alignment and Text Direction
+In this chapter you will learn about the following properties:
+
+text-align
+text-align-last
+vertical-align
+direction
+unicode-bidi
+Text Alignment
+The text-align property is used to set the horizontal alignment of a text.
+
+This property can have one of the following values:
+
+left - Aligns the text to the left
+right - Aligns the text to the right
+center - Centers the text
+justify - Stretches the lines so that each line has equal width
+The following example shows left, right and center aligned text (left is default if text direction is left-to-right, and right is default if text direction is right-to-left):
+
+Example
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):
+
+Example
+div {
+  text-align: justify;
+}
+Text Align Last
+The text-align-last property specifies how to align the last line of a text.
+
+This property can have one of the following values:
+
+auto - Default value. The last line is justified and aligned left
+left - The last line is aligned to the left
+right - The last line is aligned to the right
+center - The last line is center-aligned
+justify - The last line is justified as the rest of the lines
+start - The last line is aligned at the start of the line
+end - The last line is aligned at the end of the line
+Example
+Different alignment of the last line in three <p> elements:
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+REMOVE ADS
+
+Vertical Alignment
+The vertical-align property sets the vertical alignment of an element.
+
+This property can have one of the following values:
+
+baseline - Default value. The element is aligned with the baseline of the parent
+length/% - Raises or lower an element by the specified length or percent
+sub - The element is aligned with the subscript baseline of the parent
+super - The element is aligned with the superscript baseline of the parent
+top - The element is aligned with the top of the tallest element on the line
+text-top - The element is aligned with the top of the parent element's font
+middle - The element is placed in the middle of the parent element
+bottom - The element is aligned with the lowest element on the line
+text-bottom - The element is aligned with the bottom of the parent element's font
+Example
+Set the vertical alignment of an image in a text: 
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+REMOVE ADS
+
+Text Direction
+The direction property specifies the text direction/writing direction within a block-level element.
+
+Tip: Use this property together with the unicode-bidi property to set or return whether the text should be overridden to support multiple languages in the same document.
+
+Example
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
