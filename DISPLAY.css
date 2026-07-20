@@ -1,17 +1,7 @@
-CSS The display Property
-The CSS display Property
-The display property is an important CSS property for controlling layout. It specifies whether an HTML element is treated as a block or an inline element.
-
-Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline.
-
-The display property is used to change the default display behavior of HTML elements.
+display Property
 
 Block-level Elements
-A block-level element ALWAYS starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
-
-The <div> element is a block-level element.
-Examples of block-level elements:
-
+Examples
 <div>
 <h1> - <h6>
 <p>
@@ -19,57 +9,32 @@ Examples of block-level elements:
 <header>
 <footer>
 <section>
+
 Inline Elements
-An inline element DOES NOT start on a new line and only takes up as much width as necessary.
-
-This is an inline <span> element inside a paragraph.
-
-Examples of inline elements:
-
+Examples
 <span>
 <a>
 <img>
-REMOVE ADS
 
 Common display Values
-The CSS display property has many values. The following table lists the most commonly used:
-
-Value	Description
-inline	Displays an element as an inline element
-block	Displays an element as a block element
-contents	Makes the container disappear, making its child elements children of the element the next level up in the DOM
-flex	Displays an element as a block-level flex container
-grid	Displays an element as a block-level grid container
-inline-block	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height, width, padding, and margin values
-none	The element is completely hidden from the document flow (does not take up any space).
-Override the Default Display Value
-The display property is used to change the default display behavior of HTML elements.
-
-Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
-
-A common example is to change <li> elements to inline, to create a horizontal menu:
-
 Example
 li {
   display: inline;
 }
-Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it.
 
 The following example displays <span> elements as block elements:
-
 Example
 span {
   display: block;
 }
-The following example displays <a> elements as block elements:
 
+The following example displays <a> elements as block elements:
 Example
 a {
   display: block;
 }
-Example of More Display Values
-The following example demonstrates some more display values:
 
+Example of More Display Values
 Example
 p.ex1 {display: none;}
 p.ex2 {display: inline;}
@@ -79,32 +44,8 @@ p.ex5 {display: flex;}
 p.ex6 {display: grid;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 CSS Hide Elements
-CSS display: none;
-When using display: none; the element is completely hidden from the document flow and does not take up any space.
-
-It is commonly used with JavaScript to hide or show elements without deleting and recreating them.
-
-Click to show hidden panel
-
 Example
-How to use CSS and JavaScript to show a hidden element on a click event:
-
 <style>
 #panel {
   display: none;
@@ -116,9 +57,9 @@ function myFunction() {
   document.getElementById("panel").style.display = "block";
 }
 </script>
-Example
-How to use CSS and JavaScript to toggle between show and hide on a click event:
 
+How to use CSS and JavaScript to toggle between show and hide on a click event:
+Example
 <style>
 #panel {
   display: none;
@@ -135,31 +76,12 @@ function myFunction() {
   }
 }
 </script>
-REMOVE ADS
 
 Hide an Element - Use display:none or visibility:hidden?
-display:none
-
-Italy
-
-visibility:hidden
-
-Forest
-
-Reset
-
-Lights
-
-Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there:
-
 Example
 h1.hidden {
   display: none;
 }
-You can also use visibility:hidden; to hide an element.
-
-However, with this property, the element will be hidden, but it will still take up the same space as if it was visible:
-
 Example
 h1.hidden {
   visibility: hidden;
