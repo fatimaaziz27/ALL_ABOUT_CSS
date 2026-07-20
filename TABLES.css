@@ -119,6 +119,102 @@ table {
 
 
 
+CSS Table Size (Width and Height)
+CSS Table Width
+The CSS width property is used to set the width of a table.
+
+The width can be set:
+
+in percent (%)
+as a fixed length (px)
+by the auto keyword
+CSS Table Width in Percent
+To create a table that spans the entire screen (full-width), use width: 100%;:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Full-width table:
+
+table {
+  width: 100%;
+}
+To create a table that spans half the page, use width: 50%;:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+50% width table:
+
+table {
+  width: 50%;
+}
+REMOVE ADS
+
+CSS Table Width in a Fixed Width
+To create a table with a fixed width, use width: 500px:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Fixed width table:
+
+table {
+  width: 500px;
+}
+CSS Table Width Using auto
+To let the browser calculate the width, use width: auto;:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Using width: auto:
+
+table {
+  width: auto;
+}
+REMOVE ADS
+
+CSS Table Height
+The CSS height property is used to set the height of a table.
+
+The height can be set:
+
+in percent (%)
+as a fixed length (px)
+by the auto keyword
+The example below sets the height of the table headers (<th>) to 70px:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Set the height of table headers to a fixed height:
+
+th {
+  height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
