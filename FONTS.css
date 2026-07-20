@@ -1,6 +1,6 @@
-CSS Fonts
+/* CSS Fonts
 The CSS font-family Property
-Example
+Example */
 .p1 {
   font-family: "Times New Roman", Times, serif;
 }
@@ -13,7 +13,7 @@ Example
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
-CSS Generic Font Families
+/* CSS Generic Font Families
 Serif fonts - have a small stroke at the edges of each letter. They create a sense of formality and elegance.
 Sans-serif fonts - have clean lines (no small strokes attached). They create a modern and minimalistic look.
 Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
@@ -33,35 +33,35 @@ Monaco
 Cursive	Brush Script MT
 Lucida Handwriting
 Fantasy	Copperplate
-Papyrus
+Papyrus */
 
 
-CSS Font Fallbacks
+/* CSS Font Fallbacks
 Commonly Used Font Fallbacks:
 Serif
 Georgia, serif	
-Garamond, serif	
+Garamond, serif	 */
 
-Sans-Serif Fonts
+/* Sans-Serif Fonts
 Arial, Helvetica, sans-serif	
 Tahoma, Verdana, sans-serif	
 "Trebuchet MS", Helvetica, sans-serif	
-Geneva, Verdana, sans-serif	
+Geneva, Verdana, sans-serif	 */
 
-Monospace Fonts
-"Courier New", Courier, monospace	
+/* Monospace Fonts
+"Courier New", Courier, monospace	 */
 
-Cursive Fonts
-"Brush Script MT", cursive	
-
-
+/* Cursive Fonts
+"Brush Script MT", cursive	 */
 
 
-CSS Font Style
+
+
+/* CSS Font Style
 normal - The text is shown normally
 italic - The text is shown in italics
 oblique - The text is "leaning" (oblique is very similar to italic)
-Example
+Example */
 p.normal {
   font-style: normal;
 }
@@ -74,13 +74,13 @@ p.oblique {
   font-style: oblique;
 }
 
-CSS Font Weight
+/* CSS Font Weight
 normal - This is default. Defines normal characters
 bold - Defines thick characters
 bolder - Defines thicker characters
 lighter - Defines lighter characters
 100-900 - Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold
-Example
+Example */
 p.normal {
   font-weight: normal;
 }
@@ -97,8 +97,8 @@ p.thicker {
   font-weight: 900;
 }
 
-CSS Font Variant
-Example
+/* CSS Font Variant
+Example */
 p.normal {
   font-variant: normal;
 }
@@ -110,8 +110,8 @@ p.small {
 
 
 
-CSS Font Size
-Example
+/* CSS Font Size
+Example */
 h1 {
   font-size: 40px;
 }
@@ -124,8 +124,8 @@ p {
   font-size: 16px;
 }
 
-Set Font Size With Em
-Example
+/* Set Font Size With Em
+Example */
 body {
   font-size: 16px; /* Base font size */
 }
@@ -142,8 +142,8 @@ p {
   font-size: 1em; /* 1 * 16 = 16px */
 }
 
-Set Font Size With Rem
-Example
+/* Set Font Size With Rem
+Example */
 html {
   font-size: 16px; /* Set the root font size */
 }
@@ -160,8 +160,8 @@ p {
   font-size: 1rem; /* 1 * 16 = 16px */
 }
 
-The vw Unit
-Example
+/* The vw Unit
+Example */
 h1 {
   font-size:10vw;
 }
@@ -173,8 +173,8 @@ p {
 
 
 
-Google Fonts
-Example
+/* Google Fonts
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
@@ -184,8 +184,8 @@ body {
 </style>
 </head>
 
-We want to use a font named "Trirong" from Google Fonts:
-Example
+/* We want to use a font named "Trirong" from Google Fonts:
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 <style>
@@ -195,8 +195,8 @@ body {
 </style>
 </head>
 
-We want to use a font named "Audiowide" from Google Fonts:
-Example
+/* We want to use a font named "Audiowide" from Google Fonts:
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <style>
@@ -206,8 +206,8 @@ body {
 </style>
 </head>
 
-Use Multiple Google Fonts
-Example
+/* Use Multiple Google Fonts
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
 <style>
@@ -217,8 +217,8 @@ h1.c {font-family: "Trirong", serif;}
 </style>
 </head>
 
-Styling Google Fonts
-Example
+/* Styling Google Fonts
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
@@ -230,8 +230,8 @@ body {
 </style>
 </head>
 
-Enabling Font Effects
-Example
+/* Enabling Font Effects
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
 <style>
@@ -247,8 +247,8 @@ body {
 
 </body>
 
-Add multiple effects to the "Sofia" font
-Example
+/* Add multiple effects to the "Sofia" font
+Example */
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <style>
@@ -270,8 +270,7 @@ body {
 
 
 
-CSS Great Font Pairings
-
+/* CSS Great Font Pairings
 Georgia and Verdana
 Helvetica and Garamond
 Merriweather and Open Sans
@@ -281,9 +280,9 @@ Cinzel and Fauna One
 Fjalla One and Libre Baskerville
 Space Mono and Muli
 Spectral and Rubik
-Oswald and Noto Sans
+Oswald and Noto Sans */
 
-Example
+/* Example */
 body {
   background-color: black;
   font-family: Verdana, sans-serif;
@@ -300,7 +299,7 @@ h1 {
 
 
 
-The CSS Font Shorthand Property
+/* The CSS Font Shorthand Property
 font-style
 font-variant
 font-weight
@@ -308,7 +307,7 @@ font-stretch
 font-size
 line-height
 font-family
-Example
+Example */
 p.a {
   font: 20px Arial, sans-serif;
 }
