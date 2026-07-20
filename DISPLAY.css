@@ -77,3 +77,90 @@ p.ex3 {display: block;}
 p.ex4 {display: inline-block;}
 p.ex5 {display: flex;}
 p.ex6 {display: grid;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Hide Elements
+CSS display: none;
+When using display: none; the element is completely hidden from the document flow and does not take up any space.
+
+It is commonly used with JavaScript to hide or show elements without deleting and recreating them.
+
+Click to show hidden panel
+
+Example
+How to use CSS and JavaScript to show a hidden element on a click event:
+
+<style>
+#panel {
+  display: none;
+}
+</style>
+
+<script>
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+Example
+How to use CSS and JavaScript to toggle between show and hide on a click event:
+
+<style>
+#panel {
+  display: none;
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+REMOVE ADS
+
+Hide an Element - Use display:none or visibility:hidden?
+display:none
+
+Italy
+
+visibility:hidden
+
+Forest
+
+Reset
+
+Lights
+
+Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there:
+
+Example
+h1.hidden {
+  display: none;
+}
+You can also use visibility:hidden; to hide an element.
+
+However, with this property, the element will be hidden, but it will still take up the same space as if it was visible:
+
+Example
+h1.hidden {
+  visibility: hidden;
+}
