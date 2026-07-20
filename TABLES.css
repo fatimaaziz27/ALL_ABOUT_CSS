@@ -291,6 +291,104 @@ td {
 
 
 
+CSS Table Styling
+CSS Table Padding
+To add some more space between the inner borders and the content in a table, use the padding property on <td> and <th> elements:
 
+First Name	Last Name	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+CSS Horizontal Dividers
+To create horizontal dividers for a table, add the border-bottom property to <th> and <td> elements:
+
+First Name	Last Name	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+CSS Hoverable Table
+Use the CSS :hover selector on <tr> to highlight table rows on mouse over:
+
+First Name	Last Name	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+tr:hover {background-color: coral;}
+REMOVE ADS
+
+CSS Zebra-striped Table
+For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
+
+First Name	Last Name	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+tr:nth-child(even) {background-color: #f2f2f2;}
+CSS Table Color
+The example below specifies a background color and a text color for the <th> elements:
+
+First Name	Last Name	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Responsive Tables
+CSS Responsive Tables
+A responsive table will display a horizontal scrollbar if the screen is too small to display the full content.
+
+Resize the browser window to see the effect:
+
+First Name	Last Name	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points
+Jill	Smith	50	50	50	50	50	50	50	50	50	50	50	50
+Eve	Jackson	94	94	94	94	94	94	94	94	94	94	94	94
+Adam	Johnson	67	67	67	67	67	67	67	67	67	67	67	67
+How to do it:
+Wrap the <table> element in a <div> container.
+
+Set the overflow-x property to auto for the <div> element: 
+
+Example
+div.tablecontainer {
+  overflow-x: auto;
+}
+Note: In OS X Lion (on Mac), scrollbars are hidden by default and are only shown when being used (even though "overflow:scroll" is set).
+
+REMOVE ADS
+
+More Examples
+Make a fancy table
+This example demonstrates how to create a fancy table.
+
+Add and position a table caption
+This example demonstrates how to add, and position a table caption.
 
 
