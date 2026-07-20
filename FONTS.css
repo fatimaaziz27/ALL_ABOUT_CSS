@@ -888,5 +888,36 @@ For a list of all free Google Fonts, visit our How To - Google Fonts Tutorial.
 
 
 
+CSS Font Property
+The CSS Font Shorthand Property
+To shorten the code, it is possible to specify all the individual font properties in one declaration.
 
+The CSS font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-stretch
+font-size
+line-height
+font-family
+Rules for the CSS Font Shorthand Property
+The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+If defined, font-style, font-variant and font-weight must precede font-size.
+If defined, line-height must immediately follow font-size, preceded by "/", like this: 15px/30px.
+font-family must be the last value specified.
+Example
+Use the font shorthand property to set multiple font properties in one declaration:
+
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic bold 16px Arial, sans-serif;
+}
+
+p.c {
+  font: italic small-caps bold 15px/30px Georgia, serif;
+}
 
