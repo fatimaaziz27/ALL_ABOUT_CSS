@@ -30,6 +30,8 @@ div {
 }
 
 
+
+
 CSS Text Alignment
 In this chapter you will learn about the following properties:
 text-align
@@ -103,18 +105,6 @@ p {
   direction: rtl;
   unicode-bidi: bidi-override;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
