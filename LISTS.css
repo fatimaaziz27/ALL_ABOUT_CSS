@@ -1,5 +1,5 @@
-CSS Lists
-Example
+/* CSS Lists
+Example */
 ul.a {list-style-type: circle;}
 ul.b {list-style-type: disc;}
 ul.c {list-style-type: square;}
@@ -9,15 +9,15 @@ ol.e {list-style-type: lower-roman;}
 ol.f {list-style-type: lower-alpha;}
 ol.g {list-style-type: decimal;}
 
-CSS Replace List-item Marker with an Image
-Example
+/* CSS Replace List-item Marker with an Image
+Example */
 ul {
   list-style-image: url('sqpurple.gif');
   list-style-type: square;
 }
 
-CSS Position the List-item Markers
-Example
+/* CSS Position the List-item Markers
+Example */
 ul.a {
   list-style-position: outside;
 }
@@ -26,22 +26,22 @@ ul.b {
   list-style-position: inside;
 }
 
-CSS Remove List-Item Markers
-Example
+/* CSS Remove List-Item Markers
+Example */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-CSS list-style Shorthand Property
-Example
+/* CSS list-style Shorthand Property
+Example */
 ul {
   list-style: square inside url("sqpurple.gif");
 }
 
-CSS Styling List With Colors
-Example
+/* CSS Styling List With Colors
+Example */
 ol {
   background: salmon;
   padding: 20px;
