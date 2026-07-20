@@ -1,13 +1,13 @@
-CSS Links
-Example
+/* CSS Links
+Example */
 a {
   color: hotpink;
   background-color: yellow;
   font-weight: bold;
 }
 
-Styling Links Depending on State
-Example
+/* Styling Links Depending on State
+Example */
 /* unvisited link */
 a:link {
   color: red;
@@ -28,8 +28,8 @@ a:active {
   color: blue;
 }
 
-CSS Links - Text Decoration
-Example
+/* CSS Links - Text Decoration
+Example */
 a:link {
   text-decoration: none;
 }
@@ -46,8 +46,8 @@ a:active {
   text-decoration: underline;
 }
 
-CSS Links - Background Color
-Example
+/* CSS Links - Background Color
+Example */
 a:link {
   background-color: yellow;
 }
@@ -64,8 +64,8 @@ a:active {
   background-color: hotpink;
 } 
 
-More Examples
-Example
+/* More Examples
+Example */
 a.one:link {color:red;}
 a.one:visited {color:blue;}
 a.one:hover {color:orange;}
@@ -86,8 +86,8 @@ a.five:link {color:red;text-decoration:none;}
 a.five:visited {color:blue;text-decoration:none;}
 a.five:hover {text-decoration:underline;}
 
-This example demonstrates the different types of cursors (can be useful for links)
-Example
+/* This example demonstrates the different types of cursors (can be useful for links)
+Example */
 <span style="cursor: auto">auto</span><br>
 <span style="cursor: crosshair">crosshair</span><br>
 <span style="cursor: default">default</span><br>
@@ -109,8 +109,8 @@ Example
 
 
 
-CSS Link Buttons
-Example
+/* CSS Link Buttons
+Example */
 a:link, a:visited {
   background-color: #f44336;
   color: white;
@@ -124,8 +124,8 @@ a:hover, a:active {
   background-color: red;
 }
 
-how to create link boxes/buttons:
-Example
+/* how to create link boxes/buttons:
+Example */
 a:link, a:visited {
   background-color: white;
   color: black;
