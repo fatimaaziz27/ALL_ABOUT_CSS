@@ -1,5 +1,4 @@
-display Property
-
+/* display Property
 Block-level Elements
 Examples
 <div>
@@ -8,34 +7,34 @@ Examples
 <form>
 <header>
 <footer>
-<section>
+<section> */
 
-Inline Elements
+/* Inline Elements
 Examples
 <span>
 <a>
-<img>
+<img> */
 
-Common display Values
-Example
+/* Common display Values
+Example */
 li {
   display: inline;
 }
 
-The following example displays <span> elements as block elements:
-Example
+/* The following example displays <span> elements as block elements:
+Example */
 span {
   display: block;
 }
 
-The following example displays <a> elements as block elements:
-Example
+/* The following example displays <a> elements as block elements:
+Example */
 a {
   display: block;
 }
 
-Example of More Display Values
-Example
+/* Example of More Display Values
+Example */
 p.ex1 {display: none;}
 p.ex2 {display: inline;}
 p.ex3 {display: block;}
@@ -44,8 +43,8 @@ p.ex5 {display: flex;}
 p.ex6 {display: grid;}
 
 
-CSS Hide Elements
-Example
+/* CSS Hide Elements
+Example */
 <style>
 #panel {
   display: none;
@@ -58,8 +57,8 @@ function myFunction() {
 }
 </script>
 
-How to use CSS and JavaScript to toggle between show and hide on a click event:
-Example
+/* How to use CSS and JavaScript to toggle between show and hide on a click event:
+Example */
 <style>
 #panel {
   display: none;
@@ -77,8 +76,8 @@ function myFunction() {
 }
 </script>
 
-Hide an Element - Use display:none or visibility:hidden?
-Example
+/* Hide an Element - Use display:none or visibility:hidden?
+Example */
 h1.hidden {
   display: none;
 }
