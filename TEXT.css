@@ -257,20 +257,12 @@ a {
 
 
 CSS Text Transformation
-CSS Text Transformation
-The CSS text-transform property is used to control the capitalization of text in an element.
-
-It can be used to transform a text into uppercase or lowercase letters, or capitalize the first letter of each word, without changing the original content in HTML.
-
 This property can have one of the following values:
-
 none - No transformation. Text renders as it is
 capitalize - Transforms the first character of each word to uppercase
 uppercase - Transforms all characters to uppercase
 lowercase - Transforms all characters to lowercase
 Example
-Demonstration of the text-transform property:
-
 p.uppercase {
   text-transform: uppercase;
 }
@@ -282,16 +274,6 @@ p.lowercase {
 p.capitalize {
   text-transform: capitalize;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
