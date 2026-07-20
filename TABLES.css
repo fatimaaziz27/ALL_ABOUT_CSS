@@ -1,130 +1,130 @@
-CSS Table Borders
+/* CSS Table Borders
 The border property is a shorthand property for:
 border-width - sets the width of the border
 border-style - sets the style of the border (required)
 border-color - sets the color of the border
-Example
+Example */
 table, th, td {
   border: 1px solid;
 }
 
-CSS Table Border Color
-Example
+/* CSS Table Border Color
+Example */
 table, th, td {
   border: 1px solid green;
 }
 
-CSS Collapse Table Borders
-Example
+/* CSS Collapse Table Borders
+Example */
 table {
   border-collapse: collapse;
 }
 
-CSS Table Padding
-Example
+/* CSS Table Padding
+Example */
 th, td {
   padding: 10px;
 }
 
-CSS Border Spacing
-Example
+/* CSS Border Spacing
+Example */
 table {
   border-collapse: separate;
   border-spacing: 15px;
 }
 
-CSS Outside Table Borders
-Example
+/* CSS Outside Table Borders
+Example */
 table {
   border: 1px solid;
 }
 
 
-CSS Table Width
-Example
+/* CSS Table Width
+Example */
 table {
   width: 100%;
 }
 
-To create a table that spans half the page, use width: 50%;:
+/* To create a table that spans half the page, use width: 50%;: */
 table {
   width: 50%;
 }
 
-CSS Table Width in a Fixed Width
-Example
+/* CSS Table Width in a Fixed Width
+Example */
 table {
   width: 500px;
 }
 
-CSS Table Width Using auto
-Example
+/* CSS Table Width Using auto
+Example */
 table {
   width: auto;
 }
 
-CSS Table Height
-Example
+/* CSS Table Height
+Example */
 th {
   height: 70px;
 }
 
 
-Horizontal Alignment
+/* Horizontal Alignment
 CSS text-align: center
-Example
+Example */
 td {
   text-align: center;
 }
 
-CSS text-align: left
-Example
+/* CSS text-align: left
+Example */
 th {
   text-align: left;
 }
 
-Vertical Alignment
-Example
+/* Vertical Alignment
+Example */
 td {
   height: 50px;
   vertical-align: bottom;
 }
 
 
-CSS Table Padding
-Example
+/* CSS Table Padding
+Example */
 th, td {
   padding: 10px;
   text-align: left;
 }
 
-CSS Horizontal Dividers
-Example
+/* CSS Horizontal Dividers
+Example */
 th, td {
   border-bottom: 1px solid #ddd;
 }
 
-CSS Hoverable Table
-Example
+/* CSS Hoverable Table
+Example */
 tr:hover {background-color: coral;}
 
-CSS Zebra-striped Table
-Example
+/* CSS Zebra-striped Table
+Example */
 tr:nth-child(even) {background-color: #f2f2f2;}
 
-CSS Table Color
-Example
+/* CSS Table Color
+Example */
 th {
   background-color: #04AA6D;
   color: white;
 }
 
 
-CSS Responsive Tables
+/* CSS Responsive Tables
 How to do it:
 Wrap the <table> element in a <div> container.
 Set the overflow-x property to auto for the <div> element: 
-Example
+Example */
 div.tablecontainer {
   overflow-x: auto;
 }
