@@ -218,3 +218,79 @@ th {
 
 
 
+CSS Table Alignment
+Horizontal Alignment
+The CSS text-align property is used to set the horizontal alignment of the content in <th> or <td>.
+
+This property can have one of the following values:
+
+left - Aligns the text to the left
+right - Aligns the text to the right
+center - Centers the text
+Note: By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned!
+
+CSS text-align: center
+To center-align the content of <td> elements, use text-align: center:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Center-align <td> elements:
+
+td {
+  text-align: center;
+}
+CSS text-align: left
+To force the content of <th> elements to be left-aligned, use text-align: left on <th> elements:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Left-align <th> elements:
+
+th {
+  text-align: left;
+}
+REMOVE ADS
+
+Vertical Alignment
+The CSS vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+Note: By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
+The following example sets the vertical text alignment to bottom for <td> elements:
+
+Firstname	Lastname	Savings
+Peter	Griffin	$100
+Lois	Griffin	$150
+Joe	Swanson	$300
+Example
+Sets vertical alignment to bottom for <td> elements:
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
