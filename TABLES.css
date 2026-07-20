@@ -1,347 +1,118 @@
-CSS Tables
- HTML tables can be greatly improved with CSS:
-
-Company	Contact	Country
-Alfreds Futterkiste	Maria Anders	Germany
-Berglunds snabbköp	Christina Berglund	Sweden
-Centro comercial Moctezuma	Francisco Chang	Mexico
-Ernst Handel	Roland Mendel	Austria
-Island Trading	Helen Bennett	UK
-Königlich Essen	Philip Cramer	Germany
-Laughing Bacchus Winecellars	Yoshi Tannamuri	Canada
-Magazzini Alimentari Riuniti	Giovanni Rovelli	Italy
 CSS Table Borders
-The CSS border property is used to specify the width, style, and color of table borders.
-
 The border property is a shorthand property for:
-
 border-width - sets the width of the border
 border-style - sets the style of the border (required)
 border-color - sets the color of the border
-The example below specifies a 1px solid border for <table>, <th>, and <td> elements:
-
-Firstname	Lastname
-Peter	Griffin
-Lois	Griffin
 Example
 table, th, td {
   border: 1px solid;
 }
-CSS Table Border Color
-The example below specifies a 1px solid green border for <table>, <th>, and <td> elements:
 
-Firstname	Lastname
-Peter	Griffin
-Lois	Griffin
+CSS Table Border Color
 Example
 table, th, td {
   border: 1px solid green;
 }
-Why Double Borders?
-Notice that the tables in the examples above have double borders. This is because both the <table>, <th>, and <td> elements have separate borders.
-
-To remove double borders, take a look at the example below.
-
-REMOVE ADS
 
 CSS Collapse Table Borders
-The CSS border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.
-
-This property can have one of the following values:
-
-separate - Default value. Borders are separated; each cell will display its own borders
-collapse - Borders are collapsed into a single border when possible
-The following table has collapsed borders:
-
-Firstname	Lastname
-Peter	Griffin
-Lois	Griffin
 Example
-Using the border-collapse property:
-
 table {
   border-collapse: collapse;
 }
-CSS Table Padding
-To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:
 
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
+CSS Table Padding
 Example
 th, td {
   padding: 10px;
 }
-REMOVE ADS
 
 CSS Border Spacing
-The CSS border-spacing property sets the distance between the borders of adjacent cells.
-
-Note: This property works only when border-collapse is set to "separate".
-
-The following table has a border-spacing of 15px:
-
-Firstname	Lastname
-Peter	Griffin
-Lois	Griffin
 Example
-Using the border-spacing property:
-
 table {
   border-collapse: separate;
   border-spacing: 15px;
 }
-CSS Outside Table Borders
-If you just want a border around the table (not inside), you specify the border property only for the <table> element:
 
-Firstname	Lastname
-Peter	Griffin
-Lois	Griffin
+CSS Outside Table Borders
 Example
 table {
   border: 1px solid;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CSS Table Size (Width and Height)
 CSS Table Width
-The CSS width property is used to set the width of a table.
-
-The width can be set:
-
-in percent (%)
-as a fixed length (px)
-by the auto keyword
-CSS Table Width in Percent
-To create a table that spans the entire screen (full-width), use width: 100%;:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Full-width table:
-
 table {
   width: 100%;
 }
+
 To create a table that spans half the page, use width: 50%;:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
-Example
-50% width table:
-
 table {
   width: 50%;
 }
-REMOVE ADS
 
 CSS Table Width in a Fixed Width
-To create a table with a fixed width, use width: 500px:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Fixed width table:
-
 table {
   width: 500px;
 }
+
 CSS Table Width Using auto
-To let the browser calculate the width, use width: auto;:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Using width: auto:
-
 table {
   width: auto;
 }
-REMOVE ADS
 
 CSS Table Height
-The CSS height property is used to set the height of a table.
-
-The height can be set:
-
-in percent (%)
-as a fixed length (px)
-by the auto keyword
-The example below sets the height of the table headers (<th>) to 70px:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Set the height of table headers to a fixed height:
-
 th {
   height: 70px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-CSS Table Alignment
 Horizontal Alignment
-The CSS text-align property is used to set the horizontal alignment of the content in <th> or <td>.
-
-This property can have one of the following values:
-
-left - Aligns the text to the left
-right - Aligns the text to the right
-center - Centers the text
-Note: By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned!
-
 CSS text-align: center
-To center-align the content of <td> elements, use text-align: center:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Center-align <td> elements:
-
 td {
   text-align: center;
 }
+
 CSS text-align: left
-To force the content of <th> elements to be left-aligned, use text-align: left on <th> elements:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Left-align <th> elements:
-
 th {
   text-align: left;
 }
-REMOVE ADS
 
 Vertical Alignment
-The CSS vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
-
-Note: By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
-
-The following example sets the vertical text alignment to bottom for <td> elements:
-
-Firstname	Lastname	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
-Sets vertical alignment to bottom for <td> elements:
-
 td {
   height: 50px;
   vertical-align: bottom;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-CSS Table Styling
 CSS Table Padding
-To add some more space between the inner borders and the content in a table, use the padding property on <td> and <th> elements:
-
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
 th, td {
   padding: 10px;
   text-align: left;
 }
-CSS Horizontal Dividers
-To create horizontal dividers for a table, add the border-bottom property to <th> and <td> elements:
 
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
+CSS Horizontal Dividers
 Example
 th, td {
   border-bottom: 1px solid #ddd;
 }
-CSS Hoverable Table
-Use the CSS :hover selector on <tr> to highlight table rows on mouse over:
 
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
+CSS Hoverable Table
 Example
 tr:hover {background-color: coral;}
-REMOVE ADS
 
 CSS Zebra-striped Table
-For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:
-
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
 Example
 tr:nth-child(even) {background-color: #f2f2f2;}
-CSS Table Color
-The example below specifies a background color and a text color for the <th> elements:
 
-First Name	Last Name	Savings
-Peter	Griffin	$100
-Lois	Griffin	$150
-Joe	Swanson	$300
+CSS Table Color
 Example
 th {
   background-color: #04AA6D;
@@ -349,46 +120,11 @@ th {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 CSS Responsive Tables
-CSS Responsive Tables
-A responsive table will display a horizontal scrollbar if the screen is too small to display the full content.
-
-Resize the browser window to see the effect:
-
-First Name	Last Name	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points	Points
-Jill	Smith	50	50	50	50	50	50	50	50	50	50	50	50
-Eve	Jackson	94	94	94	94	94	94	94	94	94	94	94	94
-Adam	Johnson	67	67	67	67	67	67	67	67	67	67	67	67
 How to do it:
 Wrap the <table> element in a <div> container.
-
 Set the overflow-x property to auto for the <div> element: 
-
 Example
 div.tablecontainer {
   overflow-x: auto;
 }
-Note: In OS X Lion (on Mac), scrollbars are hidden by default and are only shown when being used (even though "overflow:scroll" is set).
-
-REMOVE ADS
-
-More Examples
-Make a fancy table
-This example demonstrates how to create a fancy table.
-
-Add and position a table caption
-This example demonstrates how to add, and position a table caption.
-
-
