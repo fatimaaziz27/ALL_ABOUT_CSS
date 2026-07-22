@@ -48,41 +48,14 @@ A <div> element with both a width and a max-width property: */
   background-color: powderblue;
 }
 
-
-
-
-
-
-
-
-
-
-
-CSS The max-width Property
-The CSS max-width Property
-The max-width property defines the maximum width of an element.
-
-This property prevents the element's width from being larger than the specified value (it can be smaller, but not larger).
-
-This property is useful for creating responsive layouts and to ensure content readability across various screen sizes.
-
+/* CSS The max-width Property
 Problem with width:
-Here we have a horizontally centered <div> element with a specific width (600px):
-
-This <div> element has a width of 600px, and margin set to auto. This <div> element has a width of 600px, and margin set to auto.
-
 What happens to the <div> above if the browser window is smaller than the width of the element? Some of the content will not show, and the browser might add a horizontal scrollbar to the page.
-
 Using max-width instead:
-Now, we use the max-width property instead. This will improve the browser's handling of small windows:
-
+we use the max-width property instead. This will improve the browser's handling of small windows:
 This <div> element has a max-width of 600px, and margin set to auto. This <div> element has a max-width of 600px, and margin set to auto.
+Example */
 
-Tip: Resize the browser window to less than 600px wide, to see the difference between the two <div>s!
-
-Here is the CSS code for the two <div>s above:
-
-Example
 div.ex1 {
   width: 500px;
   margin: auto;
@@ -94,4 +67,3 @@ div.ex2 {
   margin: auto;
   border: 3px solid #73AD21;
 }
-
