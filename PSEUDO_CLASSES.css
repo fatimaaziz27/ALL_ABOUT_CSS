@@ -1,0 +1,385 @@
+CSS Pseudo-classes
+A CSS pseudo-class is a keyword that can be added to a selector, to define a style for a special state of an element.
+
+Some common use for pseudo-classes:
+
+Style an element when a user moves the mouse over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+Style valid/invalid/required/optional form elements
+Style an element that is the first child of its parent
+Syntax
+Pseudo-classes are always denoted by a single colon (:) followed by the pseudo-class name:
+
+selector:pseudo-class-name {
+  CSS properties
+}
+Mouse Over Me
+
+Interactive Pseudo-classes
+Interactive pseudo-classes apply styles based on user interaction:
+
+:hover - When mouse is over an element
+:focus - When an element has focus
+:active - When an element is being activated
+:link - Unvisited links
+:visited - Visited links
+Structural Pseudo-classes
+Structural pseudo-classes select elements based on their position in the document tree:
+
+:first-child - First child of a parent
+:last-child - Last child of a parent
+:nth-child(n) - The nth child of a parent
+:lang() - Elements with a specific language
+CSS Pseudo-classes Reference
+For a complete list of all CSS Pseudo-classes, visit our CSS Pseudo-classes Reference.
+
+
+
+
+
+
+
+CSS Interactive Pseudo-classes
+Interactive Pseudo-classes
+Interactive pseudo-classes apply styles based on user interaction with elements.
+
+Here we use the :hover pseudo-class and the :focus pseudo-class:
+
+Mouse Over Me
+
+Click Me To Get Focus
+Pseudo-classes Used on Links
+For HTML links, it is common to use the following pseudo-classes:
+
+:link - Styles unvisited links
+:visited - Styles visited links
+:hover - Styles a link on mouse over
+:active - Styles an activated link
+Example
+Display links in different colors depending on state:
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+REMOVE ADS
+
+:hover on <div>
+Here is an example of using the :hover pseudo-class on a <div> element:
+
+Example
+div:hover {
+  background-color: blue;
+}
+
+:focus on <input>
+Here is an example of using the :focus pseudo-class to style an input field when it gets focus:
+
+Example
+input:focus {
+  background-color: yellow;
+}
+
+REMOVE ADS
+
+Pseudo-classes and HTML Classes
+Pseudo-classes can easily be combined with HTML classes:
+
+Example
+Add a :hover pseudo-class to the <a> element with class "highlight":
+
+a.highlight:hover {
+  color: #ff0000;
+}
+Simple Tooltip Hover
+Hover over a <div> element to show a <p> element (like a tooltip):
+
+Hover over me to show the <p> element.
+Example
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+
+
+
+
+
+
+
+
+CSS Structural Pseudo-classes
+Structural Pseudo-classes
+Structural pseudo-classes select elements based on their position in the document tree.
+
+The CSS :first-child Pseudo-class
+The :first-child pseudo-class matches a specific element that is the first child of another element.
+
+Style all first child <p> elements
+In the following example, the selector matches all <p> elements that is the first child of any element:
+
+Example
+p:first-child {
+  color: blue;
+}
+Style the first <em> element in all <p> elements
+In the following example, the selector matches the first <em> element in all <p> elements:
+
+Example
+p em:first-child {
+  color: blue;
+}
+Style all <em> elements in all first child <p> elements
+In the following example, the selector matches all <em> elements in <p> elements that are the first child of another element:
+
+Example
+p:first-child em {
+  color: blue;
+}
+REMOVE ADS
+
+The CSS :lang() Pseudo-class
+The :lang() pseudo-class is used to select elements with a lang attribute with the specified value.
+
+Example
+Define the quotation marks for <q> elements with lang="no": 
+
+<html>
+<head>
+<style>
+q:lang(no) {
+  quotes: "~" "~";
+}
+</style>
+</head>
+<body>
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+</body>
+</html>
+Other Structural Pseudo-classes
+There are many more structural pseudo-classes available:
+
+:last-child - Matches the last child of a parent
+:nth-child(n) - Matches the nth child of a parent
+:nth-last-child(n) - Matches the nth child from the end
+:only-child - Matches an element that is the only child
+:first-of-type - Matches the first element of its type
+:last-of-type - Matches the last element of its type
+Exercise
+?
+Which pseudo-class selects the first child of an element?
+
+
+:nth-child(0)
+:first-of-type
+:first-child
+:only-child
+
+REMOVE ADS
+
+CSS Pseudo-classes Reference
+For a complete list of all CSS Pseudo-classes, visit our CSS Pseudo-classes Reference.
+
+
+
+
+
+
+
+
+
+
+
+CSS Pseudo-elements
+CSS Pseudo-Elements
+A CSS pseudo-element is a keyword that can be added to a selector, to style a specific part of an element.
+
+Some common use for pseudo-elements:
+
+Style the first letter or first line, of an element
+Insert content before or after an element
+Style the markers of list items
+Style the user-selected portion of an element
+Style the viewbox behind a dialog box
+Syntax
+Pseudo-elements are denoted by a double colon (::) followed by the pseudo-element name:
+
+selector::pseudo-element-name {
+  CSS properties
+}
+Text Pseudo-elements
+Text pseudo-elements style specific parts of text content:
+
+::first-line - Style the first line of text
+::first-letter - Style the first letter of text
+Content Pseudo-elements
+Content pseudo-elements insert or style generated content:
+
+::before - Insert content before an element
+::after - Insert content after an element
+::marker - Style list item markers
+::selection - Style user-selected text
+::backdrop - Style dialog backdrop
+CSS Pseudo-elements Reference
+For a complete list of all CSS Pseudo-elements, visit our CSS Pseudo-elements Reference.
+
+
+
+
+
+
+
+
+
+
+CSS Pseudo-elements for Text
+Pseudo-elements for Text
+Pseudo-elements for text, allow you to style specific parts of text content, such as the first line or first letter.
+
+The CSS ::first-line Pseudo-element
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+Example
+Format the first line of text in all <p> elements: 
+
+p::first-line {
+  color: red;
+  font-variant: small-caps;
+  font-size: 19px;
+}
+The CSS ::first-letter Pseudo-element
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+
+Example
+Format the first letter of the text in all <p> elements:  
+
+p::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+Pseudo-elements and HTML Classes
+Pseudo-elements can easily be combined with HTML classes. 
+
+Example
+Display the first letter of <p> elements with class="intro", in red and in a larger size: 
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}
+REMOVE ADS
+
+Multiple Pseudo-elements
+Several pseudo-elements can also be combined.
+
+In the following example, the first letter of <p> elements will be red and in an xx-large font size. The rest of the first line will be blue and in small-caps. The rest of the paragraph will be in the default font size and color:
+
+Example
+p::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: blue;
+  font-variant: small-caps;
+}
+
+
+
+
+
+
+
+
+
+CSS Pseudo-elements for Content
+Pseudo-elements for Content
+Pseudo-elements for content allow you to insert content before or after elements, style list markers, and more.
+
+The CSS ::before Pseudo-element
+The ::before pseudo-element is used to insert some content before the content of a specified element.
+
+Use the content property to specify the content to insert.
+
+Example
+Insert an image before the content of each <h3> element: 
+
+h3::before {
+  content: url(smiley.gif);
+}
+The CSS ::after Pseudo-element
+The ::after pseudo-element is used to insert some content after the content of a specified element.
+
+Use the content property to specify the content to insert. 
+
+Example
+Insert an image after the content of each <h3> element:
+
+h3::after {
+  content: url(smiley.gif);
+}
+REMOVE ADS
+
+The CSS ::marker Pseudo-element
+The ::marker pseudo-element is used to style the list item markers.
+
+Example
+Style the markers of list items: 
+
+::marker {
+  color: red;
+  font-size: 23px;
+}
+The CSS ::selection Pseudo-element
+The ::selection pseudo-element is used to style the part of a text that is selected by a user.
+
+Example
+Style the user-selected text with a red color, and a yellow background: 
+
+::selection {
+  color: red;
+  background: yellow;
+}
+The CSS ::backdrop Pseudo-element
+The ::backdrop pseudo-element is used to style the viewbox behind a dialog box or popover element.
+
+Example
+Style the viewbox behind a dialog box: 
+
+dialog::backdrop {
+  background-color: lightgreen;
+}
+CSS Pseudo-elements Reference
+For a complete list of all CSS Pseudo-elements, visit our CSS Pseudo-elements Reference.
+
