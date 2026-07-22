@@ -1,0 +1,95 @@
+/* CSS Center Align
+Example */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Horizontal Alignment
+There are several ways to horizontally align elements:
+margin: auto - Center block elements
+text-align: center - Center text inside elements
+float or position - Left/right alignment */
+
+/* Vertical Alignment
+Vertical centering can be achieved using modern layout techniques:
+Flexbox - Use align-items: center
+Grid - Use place-items: center
+Position + Transform - For elements of unknown dimensions */
+
+
+
+/* CSS Horizontal Align
+Example */
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* Center Align Text
+Example */
+p {
+  text-align: center;
+}
+
+/* Center Align an Image
+Example */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* Left and Right Align - Using position
+Example */
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* Left and Right Align - Using float
+Example */
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+
+
+/* CSS Vertical Align
+Example */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+/* Center Align with Grid
+Example */
+.center {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+/* Center Align with position and transform
+Example */
+.container p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
