@@ -1,0 +1,215 @@
+CSS Float
+The CSS float Property
+The float property specifies how an element should float within its container.
+
+It places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - Default. The element does not float and is displayed just where it occurs in the text
+inherit - The element inherits the float value of its parent
+Tip: The float property is often used to wrap text around images!
+
+CSS float: right Example
+The float: right value indicates that an element should float to the right within its container.
+
+The following example specifies that the image should float to the right.
+
+Tip: If you make the screen smaller, you will see that the text wraps around the image.
+
+PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+
+Example
+img {
+  float: right;
+}
+REMOVE ADS
+
+CSS float: left Example
+The float: left value indicates that an element should float to the left within its container.
+
+The following example specifies that the image should float to the left:
+
+PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+
+Example
+img {
+  float: left;
+}
+CSS float: none Example
+The float: none value is the default value for float, and the element is displayed just where it occurs in its container.
+
+In the following example the image will be displayed just where it occurs in the container:
+
+Pineapple Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+
+Example
+img {
+  float: none;
+}
+REMOVE ADS
+
+CSS Float Next To Each Other
+HTML <div> elements are block elements, and will start on a new line and take up the full width available. However, if we use float: left we can make the <div> elements to float next to each other:
+
+Example
+div {
+  float: left;
+  padding: 15px;
+}
+
+.div1 {
+  background: red;
+}
+
+.div2 {
+  background: yellow;
+}
+
+.div3 {
+  background: green;
+}
+
+
+
+
+
+
+
+
+
+
+CSS clear and Clearfix Hack
+The CSS clear Property
+The clear property specifies what should happen with the element that is NEXT to a floating element.
+
+The clear property prevents elements from wrapping around or beside the floated content.
+
+This property can have one of the following values:
+
+none - Default. Allows elements to float on either side
+left - The element is pushed below floated elements on its left side
+right - The element is pushed below floated elements, on its right side
+both - The element is pushed below floated elements, on both its left and right side
+inherit - The element inherits the clear value from its parent
+Example
+ Here, clear: left; pushes div2 down below the floating div1, on its left side:
+
+div1 {
+  float: left;
+}
+
+div2 {
+  clear: left;
+}
+REMOVE ADS
+
+The CSS Clearfix Hack
+If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+
+Without Clearfix
+
+With Clearfix
+
+The clearfix hack involves the ::after pseudo-element, and is used to ensure that the parent container properly encloses its floated child elements:
+
+Example
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+Example explained:
+
+.clearfix::after - Targets a pseudo-element that is generated after the content of any element with class="clearfix"
+content: "" - Ensures the pseudo-element is rendered, even if it has no visible content
+clear: both - This clears both left and right floats, effectively pushing any following content below the floated elements, and forces the parent container to expand to include them
+display: table - This creates a new block formatting context, which helps in containing floats
+You will learn more about the ::after pseudo-element in a later chapter.
+
+
+
+
+
+
+
+
+
+
+
+CSS Float Examples
+Create Equal Width Boxes
+With the float property, it is easy to float boxes of content side by side:
+
+Box 1
+
+Box 2
+
+
+Box 1
+
+Box 2
+
+Box 3
+
+Example
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 50px; /* if you want space between the images */
+}
+What is box-sizing?
+
+You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box can break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.
+
+You can read more about the box-sizing property in our CSS Box Sizing Chapter.
+
+Images Side By Side
+ItalyForestMountains
+The grid of boxes can also be used to display images side by side:
+
+Example
+.img-container {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+REMOVE ADS
+
+Create Boxes With Equal Heights
+In the previous example, you learned how to float boxes side by side with an equal width. However, it is not easy to create floating boxes with equal heights. A quick fix however, is to set a fixed height, like in the example below:
+
+Box 1
+Some content, some content, some content
+
+Box 2
+Some content, some content, some content
+
+Some content, some content, some content
+
+Some content, some content, some content
+
+Example
+.box {
+  height: 500px;
+}
+However, this is not very flexible. It is ok if you can guarantee that the boxes will always have the same amount of content in them. But many times, the content is not the same. If you try the example above on a mobile phone, you will see that the second box's content will be displayed outside of the box. This is where CSS Flexbox comes in handy - as it can automatically stretch boxes to be as long as the longest box:
+
+Example
+Using Flexbox to create flexible boxes:
+
+Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.
+Box 2 - My height will follow Box 1.
+Tip:  You can read more about the Flexbox Layout Module in our CSS Flexbox Chapter.
+
+Navigation Menu
+You can also use float with a list of hyperlinks to create a horizontal menu:
+
+Example
+HomeNewsContactAbout
