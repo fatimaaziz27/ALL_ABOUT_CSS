@@ -58,13 +58,8 @@ h2::before {
   counter-increment: subsection;
   content: counter(section) "." counter(subsection) " ";
 }
-REMOVE ADS
 
 The CSS counters() Function
-The counters() function returns the current values of the named and nested counters, as a string.
-
-Here we use the counters() function to insert a string between different levels of nested counters:
-
 Example
 ol {
   counter-reset: section;
