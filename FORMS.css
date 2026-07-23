@@ -1,5 +1,5 @@
-CSS Forms
-Example
+/* CSS Forms
+Example */
 <!DOCTYPE html>
 <html>
 <style>
@@ -58,15 +58,15 @@ input[type=submit]:hover {
 </body>
 </html>
 
-Styling Form Input Fields
+/* Styling Form Input Fields
 Style Input Width
-Example
+Example */
 input {
   width: 100%;
 }
 
-Style Input Padding
-Example
+/* Style Input Padding
+Example */
 input[type=text] {
   width: 100%;
   padding: 12px;
@@ -74,35 +74,35 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-Style Input Border
-Example
+/* Style Input Border
+Example */
 input[type=text] {
   border: 2px solid red;
   border-radius: 8px;
 }
 
-If you only want a bottom border, use the border-bottom property:
-Example
+/* If you only want a bottom border, use the border-bottom property:
+Example */
 input[type=text] {
   border: none;
   border-bottom: 1px solid red;
 }
 
-Style Input Background Color and Color
-Example
+/* Style Input Background Color and Color
+Example */
 input[type=text] {
   background-color: #3CBC8D;
   color: white;
 }
 
-CSS Form Focus and Icons
+/* CSS Form Focus and Icons
 Style Input with Focus
-Example
+Example */
 input[type=text]:focus {
   background-color: lightblue;
 }
 
-Example
+/* Example */
 input[type=text]:focus {
   border: 3px solid #555;
 }
