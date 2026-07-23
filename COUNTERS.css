@@ -1,13 +1,13 @@
-CSS Counters
+/* CSS Counters
 CSS Automatic Numbering With Counters
 To work with CSS counters we will use the following properties:
 counter-reset - Creates or resets a counter
 counter-increment - Increments or decrements a counter
 content - Inserts generated content
-counter() - Adds the value of a counter to an element
+counter() - Adds the value of a counter to an element */
 
-CSS Increase and Decrease Counter
-Example
+/* CSS Increase and Decrease Counter
+Example */
 body {
   counter-reset: section;
 }
@@ -17,8 +17,8 @@ h2::before {
   content: "Section " counter(section) ": ";
 }
 
-Decrementing a Counter
-Example
+/* Decrementing a Counter
+Example */
 body {
   counter-reset: section;
 }
@@ -28,8 +28,8 @@ h2::before {
   content: "Section " counter(section) ": ";
 }
 
-Incrementing by Custom Values
-Example
+/* Incrementing by Custom Values
+Example */
 body {
   counter-reset: section;
 }
@@ -39,8 +39,8 @@ h2::before {
   content: "Section " counter(section) ": ";
 }
 
-CSS Nested Counters
-Example
+/* CSS Nested Counters
+Example */
 body {
   counter-reset: section;
 }
@@ -59,8 +59,8 @@ h2::before {
   content: counter(section) "." counter(subsection) " ";
 }
 
-The CSS counters() Function
-Example
+/* The CSS counters() Function
+Example */
 ol {
   counter-reset: section;
   list-style-type: none;
