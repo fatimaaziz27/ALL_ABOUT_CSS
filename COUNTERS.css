@@ -1,26 +1,12 @@
 CSS Counters
-CSS Counters
-With CSS counters, you can create dynamic numbering of elements (like headings, sections, or list items) without using JavaScript.
-
-CSS counters are "variables" maintained by CSS, and their values can be incremented (or decremented) by CSS rules.
-
-Pizza
-Hamburger
-Hotdogs
 CSS Automatic Numbering With Counters
-CSS counters are like "variables". The variable values can be incremented (or decremented) by CSS rules.
-
 To work with CSS counters we will use the following properties:
-
 counter-reset - Creates or resets a counter
 counter-increment - Increments or decrements a counter
 content - Inserts generated content
 counter() - Adds the value of a counter to an element
-To use a CSS counter, it must first be created with the counter-reset property.
 
 CSS Increase and Decrease Counter
-The following example creates a counter for the page (in the body selector), then it increments the counter value by 1 for each <h2> element:
-
 Example
 body {
   counter-reset: section;
@@ -30,9 +16,8 @@ h2::before {
   counter-increment: section;
   content: "Section " counter(section) ": ";
 }
-Decrementing a Counter
-The counter-increment property has a second parameter. The default value is 1. To decrease the counter value, you can set it to -1.
 
+Decrementing a Counter
 Example
 body {
   counter-reset: section;
@@ -42,7 +27,6 @@ h2::before {
   counter-increment: section -1;
   content: "Section " counter(section) ": ";
 }
-REMOVE ADS
 
 Incrementing by Custom Values
 You can increment the counter by any value. Here we increment by 2:
