@@ -89,3 +89,88 @@ Here, we have added an inline style for the <p> element. Result: The text will b
 
 
 
+CSS Specificity Hierarchy
+Specificity Hierarchy
+Each type of CSS selector has a position in the specificity hierarchy, and the selector types carry different "weights".
+
+Selector	Example	Description	Weight
+Inline styles	<h1 style="color: pink;">	Highest priority, will override all other selectors	 
+Id selectors	#navbar	Second highest priority	1-0-0
+Classes, attribute selectors and pseudo-classes	.test, [type="text"], :hover	Third highest priority	0-1-0
+Elements and pseudo-elements	 h1, ::before, ::after	Low priority	0-0-1
+Universal selector and :where()	*, where()	No priority	0-0-0
+Understand the Weight Notation
+The weight notation uses three numbers (X-Y-Z):
+
+X - Number of ID selectors
+Y - Number of class selectors, attribute selectors, and pseudo-classes
+Z - Number of element selectors and pseudo-elements
+The selector with the higher leftmost number wins. If equal, compare the next number, and so on.
+
+Calculate the Specificity Weight
+The declaration with the highest specificity/weight value will be applied to the element.
+
+Example
+The specificity hierarchy and weight:
+
+<html>
+<head>
+  <style>
+    #demo {color: blue;} /* weight: 1-0-0 */
+    p#demo {color: orange;} /* weight: 1-0-1 WINS! */
+    .test {color: green;} /* weight: 0-1-0 */
+    p.test {color: green;} /* weight: 0-1-1 */
+    p {color: red;} /* weight: 0-0-1 */
+  </style>
+</head>
+<body>
+
+<p id="demo" class="test">Hello World!</p>
+
+</body>
+</html>
+
+More Specificity Examples
+Understand how specificity works in different scenarios:
+
+Equal specificity: the latest rule wins
+If the same rule is written twice in the external style sheet, the latest rule wins:
+
+Example
+h1 {background-color: yellow;}
+h1 {background-color: red;}
+
+ID selectors beat attribute selectors
+Look at the following code lines - Here, the first rule has higher specificity than the second, and will therefore be applied:
+
+Example
+#myDiv {background-color: yellow;}
+div[id=myDiv] {background-color: blue;}
+
+REMOVE ADS
+
+A class selector beats element selectors
+A class selector such as .intro beats h1, p, div, etc:
+
+Example
+.intro {background-color: yellow;}
+h1 {background-color: red;}
+
+The universal selector (*)
+The universal selector (*) has no specificity weight value:
+
+Example
+* {background-color: yellow;}
+h1 {background-color: red;}
+
+Inline style vs external style sheet
+The embedded style sheet is closer to the element to be styled. So in the following situation the last rule will be applied:
+
+Example
+/*From external CSS file:*/
+#content h1 {background-color: red;}
+
+/*In HTML file:*/
+<style>
+#content h1 {background-color: yellow;}
+</style>
