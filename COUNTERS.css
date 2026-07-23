@@ -29,8 +29,6 @@ h2::before {
 }
 
 Incrementing by Custom Values
-You can increment the counter by any value. Here we increment by 2:
-
 Example
 body {
   counter-reset: section;
@@ -41,23 +39,7 @@ h2::before {
   content: "Section " counter(section) ": ";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 CSS Nested Counters
-CSS Using Two Counters
-You can create multiple counters for different levels of numbering. The following example creates one counter for the page (named "section") and one counter for each <h1> element (named "subsection"):
-
 Example
 body {
   counter-reset: section;
