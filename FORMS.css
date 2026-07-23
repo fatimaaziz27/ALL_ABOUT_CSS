@@ -107,8 +107,8 @@ input[type=text]:focus {
   border: 3px solid #555;
 }
 
-Style Input with icon/image
-Example
+/* Style Input with icon/image
+Example */
 input[type=text] {
   background-color: white;
   background-image: url('searchicon.png');
@@ -117,8 +117,8 @@ input[type=text] {
   padding-left: 40px;
 }
 
-Animated Search Input
-Example
+/* Animated Search Input
+Example */
 input[type=text] {
   transition: width 0.4s ease-in-out;
 }
@@ -126,8 +126,8 @@ input[type=text]:focus {
   width: 100%;
 }
 
-Style Textarea
-Example
+/* Style Textarea
+Example */
 textarea {
   width: 100%;
   height: 150px;
@@ -139,8 +139,8 @@ textarea {
   resize: none;
 }
 
-Style a Dropdown Menu
-Example
+/* Style a Dropdown Menu
+Example */
 select {
   width: 100%;
   padding: 16px 20px;
@@ -149,8 +149,8 @@ select {
   background-color: #f1f1f1;
 }
 
-Style Form Buttons
-Example
+/* Style Form Buttons
+Example */
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #04AA6D;
   border: none;
@@ -161,8 +161,8 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-CSS Responsive Form
-Example
+/* CSS Responsive Form
+Example */
 <!DOCTYPE html>
 <html>
 <head>
