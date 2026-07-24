@@ -1,30 +1,30 @@
-CSS Float
-The float property:
+/* CSS Float
+property:
 left - The element floats to the left of its container
 right - The element floats to the right of its container
 none - Default. The element does not float and is displayed just where it occurs in the text
-inherit - The element inherits the float value of its parent
+inherit - The element inherits the float value of its parent */
 
-CSS float: right Example
-Example
+/* CSS float: right Example
+Example */
 img {
   float: right;
 }
 
-CSS float: left Example
-Example
+/* CSS float: left Example
+Example */
 img {
   float: left;
 }
 
-CSS float: none Example
-Example
+/* CSS float: none Example
+Example */
 img {
   float: none;
 }
 
-CSS Float Next To Each Other
-Example
+/* CSS Float Next To Each Other
+Example */
 div {
   float: left;
   padding: 15px;
@@ -42,16 +42,16 @@ div {
   background: green;
 }
 
-CSS clear and Clearfix Hack
+/* CSS clear and Clearfix Hack
 properties:
 none - Default. Allows elements to float on either side
 left - The element is pushed below floated elements on its left side
 right - The element is pushed below floated elements, on its right side
 both - The element is pushed below floated elements, on both its left and right side
-inherit - The element inherits the clear value from its parent
+inherit - The element inherits the clear value from its parent */
 
-Clear: left; pushes div2 down below the floating div1, on its left side
-Example
+/* Clear: left; pushes div2 down below the floating div1, on its left side
+Example */
 div1 {
   float: left;
 }
@@ -60,17 +60,17 @@ div2 {
   clear: left;
 }
 
-The CSS Clearfix Hack
-Example
+/* The CSS Clearfix Hack
+Example */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-CSS Float Examples
+/* CSS Float Examples
 Create Equal Width Boxes
-Example
+Example */
 * {
   box-sizing: border-box;
 }
@@ -81,8 +81,8 @@ Example
   padding: 50px; /* if you want space between the images */
 }
 
-Create Boxes With Equal Heights
-Example
+/* Create Boxes With Equal Heights
+Example */
 <!DOCTYPE html>
 <html>
 <head>
@@ -129,9 +129,9 @@ Example
 </body>
 </html>
 
-Navigation Menu
+/* Navigation Menu
 You can also use float with a list of hyperlinks to create a horizontal menu:
-Example
+Example */
 <!DOCTYPE html>
 <html>
 <head>
