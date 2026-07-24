@@ -1,5 +1,5 @@
-CSS Specificity
-Example
+/* CSS Specificity
+Example */
 <html>
 <head>
   <style>
@@ -13,9 +13,9 @@ Example
 </body>
 </html>
 
-Now, look at next example:
+/* Now, look at next example:
 Example
-Here, we have added a class selector (named "test"), and specified a green color for this class. Result: The text will be green, because the class selector has higher specificity:
+Here, we have added a class selector (named "test"), and specified a green color for this class. Result: The text will be green, because the class selector has higher specificity: */
 <html>
 <head>
   <style>
@@ -30,10 +30,9 @@ Here, we have added a class selector (named "test"), and specified a green color
 </body>
 </html>
 
-Now, look at next example:
+/* Now, look at next example:
 Example
-Here, we have added the id selector (named "demo"). Result: The text will be blue, because the id selector has higher specificity:
-
+Here, we have added the id selector (named "demo"). Result: The text will be blue, because the id selector has higher specificity: */
 <html>
 <head>
   <style>
@@ -49,9 +48,9 @@ Here, we have added the id selector (named "demo"). Result: The text will be blu
 </body>
 </html>
 
-Now, look at next example:
+/* Now, look at next example:
 Example
-Here, we have added an inline style for the <p> element. Result: The text will be pink, because the inline style has the highest specificity:
+Here, we have added an inline style for the <p> element. Result: The text will be pink, because the inline style has the highest specificity: */
 <html>
 <head>
   <style>
@@ -67,22 +66,20 @@ Here, we have added an inline style for the <p> element. Result: The text will b
 </body>
 </html>
 
-Specificity Hierarchy
+/* Specificity Hierarchy
 Each type of CSS selector has a position in the specificity hierarchy, and the selector types carry different "weights".
-
 Selector	Example	Description	Weight
 Inline styles	<h1 style="color: pink;">	Highest priority, will override all other selectors	 
 Id selectors	#navbar	Second highest priority	1-0-0
 Classes, attribute selectors and pseudo-classes	.test, [type="text"], :hover	Third highest priority	0-1-0
 Elements and pseudo-elements	 h1, ::before, ::after	Low priority	0-0-1
-Universal selector and :where()	*, where()	No priority	0-0-0
+Universal selector and :where()	*, where()	No priority	0-0-0 */
 
-The weight notation uses three numbers (X-Y-Z):
+/* The weight notation uses three numbers (X-Y-Z):
 X - Number of ID selectors
 Y - Number of class selectors, attribute selectors, and pseudo-classes
-Z - Number of element selectors and pseudo-elements
-
-Example
+Z - Number of element selectors and pseudo-elements */
+/* Example */
 <html>
 <head>
   <style>
@@ -100,31 +97,31 @@ Example
 </body>
 </html>
 
-More Specificity Examples
+/* More Specificity Examples
 If the same rule is written twice in the external style sheet, the latest rule wins:
-Example
+Example */
 h1 {background-color: yellow;}
 h1 {background-color: red;}
 
-ID selectors beat attribute selectors
-Example
+/* ID selectors beat attribute selectors
+Example */
 #myDiv {background-color: yellow;}
 div[id=myDiv] {background-color: blue;}
 
-A class selector beats element selectors
+/* A class selector beats element selectors
 A class selector such as .intro beats h1, p, div, etc:
-Example
+Example */
 .intro {background-color: yellow;}
 h1 {background-color: red;}
 
-The universal selector (*)
+/* The universal selector (*)
 The universal selector (*) has no specificity weight value:
-Example
+Example */
 * {background-color: yellow;}
 h1 {background-color: red;}
 
-Inline style vs external style sheet
-Example
+/* Inline style vs external style sheet
+Example */
 /*From external CSS file:*/
 #content h1 {background-color: red;}
 
