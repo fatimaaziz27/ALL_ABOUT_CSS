@@ -1,0 +1,55 @@
+/* CSS Transitions
+The following example shows a 100px * 100px <div> element. The <div> element has specified a transition effect for the width property, with a duration of 2 seconds:
+Example */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s;
+}
+
+/* How to Trigger the Transition
+Example */
+div:hover {
+  width: 300px;
+}
+
+/* Change Multiple Property Values
+Example */
+div {
+  transition: width 2s, height 4s, background-color 3s;
+}
+
+/* CSS Transition Timing
+Example
+Add a 1 second delay before starting: */
+div {
+  transition-delay: 1s;
+}
+
+/* Transition + Transform
+Example */
+div {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+/* The following example combines transition and transform for a button:
+Example */
+button {
+  transition: background-color 1s ease-out, transform 1s ease-out;
+}
+
+/* More Transition Examples
+Example */
+div {
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+/* or by using the shorthand property transition:
+Example */
+div {
+  transition: width 2s linear 1s;
+}
