@@ -1,5 +1,5 @@
-CSS Rounded Corners
-Example
+/* CSS Rounded Corners
+Example */
 #div1 {
   border-radius: 25px;
   background-color: #73AD21;
@@ -26,8 +26,8 @@ Example
   height: 150px;
 }
 
-CSS border-radius - Specify Each Corner
-Example
+/* CSS border-radius - Specify Each Corner
+Example */
 #div1 {
   border-radius: 15px 50px 30px 5px; /* four values */
  background: #04AA6D;
@@ -56,8 +56,8 @@ Example
   height: 150px;
 }
 
-CSS Elliptical and Circular Shapes
-Example
+/* CSS Elliptical and Circular Shapes
+Example */
 #div1 {
   border-radius: 70px / 30px;
   background: #04AA6D;
