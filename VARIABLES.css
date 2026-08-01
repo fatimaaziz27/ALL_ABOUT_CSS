@@ -64,16 +64,6 @@ body {
   padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* CSS Overriding Variables
 Example */
 :root {
@@ -128,27 +118,6 @@ body {
   padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Overriding Variables
 Example */
 :root {
@@ -202,20 +171,6 @@ body {
   border: 1px solid var(--note-border-color);
   padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* CSS Variables in Media Queries
 Example */
