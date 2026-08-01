@@ -1,23 +1,5 @@
-CSS Variables - var() Function
-CSS Variables
-The var() function is used to insert the value of a CSS variable.
-
-CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
-
-A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.
-
-CSS Declare a Variable
-CSS variables can have a global or local scope.
-
-Global variables can be accessed through the entire document, while local variables can be used only inside the selector where it is declared.
-
-To create a global variable, declare it inside the :root selector. The :root selector matches the document's root element.
-
-To create a local variable, declare it inside the selector that is going to use it.
-
-A CSS variable name must begin with two dashes (--) and is case sensitive!
-
-Syntax
+/* Variables - var() Function
+Syntax */
 :root {
   --primary-bg-color: green; /* global scope */
 }
@@ -25,27 +7,13 @@ Syntax
 .note {
   --note-bg: yellow; /* local scope */
 }
-The CSS var() Function
-The var() function is used to insert the value of a declared CSS variable.
 
-Syntax
+/* The CSS var() Function
+Syntax */
 var(--name, value)
-Value	Description
-name	Required. The variable name (must start with two dashes)
-value	Optional. The fallback value (used if the variable is not found)
-Advantages of using var() are:
 
-Makes the code easier to maintain (simplifies updates)
-Makes the code easier to read (more understandable)
-Makes it easier to change the color values for the entire page
-REMOVE ADS
-
-CSS Variables Example
-Here, we declare two global variables (--primary-bg-color and --primary-color).
-
-Then, we use the var() function to insert the value of the variables later in the style sheet:
-
-Example
+/* CSS Variables Example
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -70,9 +38,8 @@ body {
   padding: 10px;
 }
 
-To change the look of the page, you just need to change the two variable values:
-
-Example
+/* To change the look of the page, you just need to change the two variable values:
+Example */
 :root {
   --primary-bg-color: #8FBC8F;
   --primary-color: #FFFAF0;
