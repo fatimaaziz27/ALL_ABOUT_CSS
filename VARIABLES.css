@@ -74,8 +74,8 @@ body {
 
 
 
-CSS Overriding Variables
-Example
+/* CSS Overriding Variables
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -101,8 +101,8 @@ body {
   padding: 10px;
 }
 
-Add a New Local Variable
-Example
+/* Add a New Local Variable
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -149,8 +149,8 @@ body {
 
 
 
-Overriding Variables
-Example
+/* Overriding Variables
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -176,8 +176,8 @@ body {
   padding: 10px;
 }
 
-Add a New Local Variable
-Example
+/* Add a New Local Variable
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -217,8 +217,8 @@ body {
 
 
 
-CSS Variables in Media Queries
-Example
+/* CSS Variables in Media Queries
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -246,8 +246,8 @@ body {
   }
 }
 
-Here is another example where we also change the value of the --primary-bg-color variable in the @media rule:
-Example
+/* Here is another example where we also change the value of the --primary-bg-color variable in the @media rule:
+Example */
 :root {
   --primary-bg-color: #1e90ff;
   --primary-color: #ffffff;
@@ -277,4 +277,3 @@ body {
     --primary-bg-color: lightblue;
   }
 }
-            
