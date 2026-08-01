@@ -75,15 +75,6 @@ body {
 
 
 CSS Overriding Variables
-Override Global Variable With Local Variable
-From the previous page we have learned that global variables can be accessed through the entire document, while local variables can be used only inside the selector where it is declared.
-
-Sometimes we want the variables to change only in a specific section of the page.
-
-Assume we want a different border color for <p class="note"> elements. Then, we can re-declare the --primary-bg-color variable inside the .note selector. When we use var(--primary-bg-color) inside this selector, it will use the local --primary-bg-color variable value declared here.
-
-We see that the local --primary-bg-color variable will override the global --primary-bg-color variable for the .note selector:
-
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -110,11 +101,7 @@ body {
   padding: 10px;
 }
 
-REMOVE ADS
-
 Add a New Local Variable
-If a variable is going to be used only one single place, we could also have declared a new local variable, like this:
-
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -162,17 +149,7 @@ body {
 
 
 
-
-CSS Overriding Variables
-Override Global Variable With Local Variable
-From the previous page we have learned that global variables can be accessed through the entire document, while local variables can be used only inside the selector where it is declared.
-
-Sometimes we want the variables to change only in a specific section of the page.
-
-Assume we want a different border color for <p class="note"> elements. Then, we can re-declare the --primary-bg-color variable inside the .note selector. When we use var(--primary-bg-color) inside this selector, it will use the local --primary-bg-color variable value declared here.
-
-We see that the local --primary-bg-color variable will override the global --primary-bg-color variable for the .note selector:
-
+Overriding Variables
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -199,11 +176,7 @@ body {
   padding: 10px;
 }
 
-REMOVE ADS
-
 Add a New Local Variable
-If a variable is going to be used only one single place, we could also have declared a new local variable, like this:
-
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -245,13 +218,6 @@ body {
 
 
 CSS Variables in Media Queries
-CSS Variables in Media Queries
-Media Queries are about defining different style rules for different devices (screens, tablets, mobile phones, etc.). You can learn more Media Queries in our Media Queries Chapter.
-
-Now we want to set one variable value for screens below 450px wide, and another variable value for screens above 450px wide.
-
-Here, we first declare a new local variable named --fontsize for the .container class. We set its value to 20 pixels. Then, we create a @media rule that says "When the browser's width is 450px or wider, change the --fontsize variable value of the .container class to 40px.":
-
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -280,10 +246,7 @@ body {
   }
 }
 
-REMOVE ADS
-
 Here is another example where we also change the value of the --primary-bg-color variable in the @media rule:
-
 Example
 :root {
   --primary-bg-color: #1e90ff;
@@ -299,7 +262,7 @@ body {
   color: var(--primary-bg-color);
   background-color: var(--primary-color);
   padding: 15px;
-  font-size: var(--fontsize);
+  font-size:var(--fontsize);
 }
 
 .container h2 {
@@ -314,18 +277,4 @@ body {
     --primary-bg-color: lightblue;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
