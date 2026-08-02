@@ -1,17 +1,17 @@
-CSS @property Rule
-Syntax of @property
+/* CSS @property Rule
+Syntax of @property */
 @property --myColor {
   syntax: "<color>";
   inherits: true;
   initial-value: lightgray;
 }
 
-Using the Custom Property
+/* Using the Custom Property */
 body {
   background-color: var(--myColor);
 }
 
-Example
+/* Example */
 @property --my-bg-color {
   syntax: "<color>";
   inherits: true;
@@ -32,7 +32,7 @@ div {
   color: var(--my-txt-color);
 }
 
-Another @property Example
+/* Another @property Example */
 @property --my-bg-color {
   syntax: "<color>";
   inherits: true;
@@ -54,8 +54,8 @@ div {
   --my-bg-color: rgb(120, 180, 30);
 }
 
-Avoid Error with Type Checking and Fallback Value
-Example
+/* Avoid Error with Type Checking and Fallback Value
+Example */
 @property --my-bg-color {
   syntax: "<color>";
   inherits: true;
@@ -77,24 +77,24 @@ div {
   --my-bg-color: 2;
 }
 
-Use of the inherits Value
-Example
+/* Use of the inherits Value
+Example */
 @property --my-bg-color {
   syntax: "<color>";
   inherits: false;
   initial-value: lightgray;
 }
 
-The next example sets the inherits value to true. This means that the custom property WILL inherit values from its parent elements. Look at the result:
-Example
+/* The next example sets the inherits value to true. This means that the custom property WILL inherit values from its parent elements. Look at the result:
+Example */
 @property --my-bg-color {
   syntax: "<color>";
   inherits: true;
   initial-value: lightgray;
 }
 
-Create Smooth Animation with @property
-Example
+/* Create Smooth Animation with @property
+Example */
 @property --startColor {
   syntax: "<color>";
   initial-value: #EADEDB;
